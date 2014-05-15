@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Serge.
+ */
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form().
+ *
+ * Adds the book form element to the node form.
+ *
+ * @see book_pick_book_nojs_submit()
+ */
+function serge_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id === 'feedback_contact_message_form') {
+    $form['name']['#title'] = 'Nom';
+    $form['mail']['#title'] = 'Mail';
+    $form['subject']['#title'] = 'Sujet';
+    $form['message']['#title'] = 'Message';
+  }
+}

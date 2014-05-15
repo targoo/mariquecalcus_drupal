@@ -1,0 +1,212 @@
+
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Flexible images */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* Remove default fieldset styles. */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Allow only vertical resizing of textareas. */
+textarea {
+  resize: vertical;
+}
+
+/* Keep form elements from overflowing their containers. */
+input {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.region-menubar .menu {
+  margin: 0;
+}
+.region-menubar .menu li {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.region-menubar .menu a {
+  padding: 5px 10px;
+  display: block;
+}
+
+.node--unpublished {
+  background-color: #fff4f4;
+}
+.node--unpublished p.unpublished {
+  font-size: 48px;
+  font-size: 3rem;
+}
+
+.node__author {
+  display: inline;
+}
+
+.comment--unpublished {
+  background-color: #fff4f4;
+}
+.comment--unpublished p.unpublished {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.comment__author {
+  display: inline;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
