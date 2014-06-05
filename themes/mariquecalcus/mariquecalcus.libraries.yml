@@ -1,0 +1,22 @@
+# Custom js and dependencies.
+mariquecalcus-corescripts:
+  version: VERSION
+  js:
+    js/vendor/owl-carousel/owl.carousel.js: {}
+    js/mariquecalcus.js: {}
+  dependencies:
+    - core/jquery
+
+# Code syntax highlighter.
+mariquecalcus-syntaxhighlighter:
+  remote: http://alexgorbatchev.com/SyntaxHighlighter/
+  version: 3.0.83
+  js:
+    js/vendor/syntaxhighlighter/scripts/shCore.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushJScript.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushPhp.js: {}
+  css:
+    theme:
+      js/vendor/syntaxhighlighter/styles/shCoreDefault.css: {}
+  dependencies:
+    - core/jquery

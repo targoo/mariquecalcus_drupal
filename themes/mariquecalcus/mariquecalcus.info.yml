@@ -1,0 +1,17 @@
+name: MariqueCalcus
+type: theme
+description: 'HTML5, SASS, Responsive grid base theme.'
+package: Core
+version: VERSION
+core: 8.x
+base theme: prius
+
+libraries:
+  - mariquecalcus/mariquecalcus-syntaxhighlighter
+  - mariquecalcus/mariquecalcus-corescripts
+
+stylesheets:
+  all:
+    - js/vendor/owl-carousel/owl.carousel.css
+    - js/vendor/owl-carousel/owl.theme.css
+    - css/screen.css

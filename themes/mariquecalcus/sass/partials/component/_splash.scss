@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+html {
+  /* all the tags up to .fullscreen-cont must have this style */
+  height:100%;
+  body {
+    height:100%;
+    .container {
+      height:100%;
+      overflow: visible;
+      overflow-x: hidden;
+      #main-wrapper {
+        height:100%;
+        .intro {
+          height:100%;
+          background:transparent url('http://placehold.it/1240x885') center center no-repeat;
+          position: relative;
+          z-index: 1;
+          padding: 0;
+          width: 100%;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+
+          .fullscreen-cont,
+          .fullscreen-img {
+            display:block;
+            position:relative;
+            min-width:100%;
+            min-height:100%;
+          }
+
+          /* content styles */
+          .fullscreen-img {
+            display:block;
+            position:absolute;
+            z-index:1;
+
+            background-size:cover;
+            background-position:50% 50%;
+          }
+          .content {
+            display:block;
+            position:relative;
+            z-index:1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  html {
+    /* all the tags up to .fullscreen-cont must have this style */
+    height:100%;
+    body {
+      height:100%;
+      .container {
+        height:100%;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

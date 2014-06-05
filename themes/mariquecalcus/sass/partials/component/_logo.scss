@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+#logo {
+  @include image-replace('../images/logos/logo.png', block);
+  @include hide-text();
+  @include unstyled-link();
+  @include transition(all .1s ease-out);
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+  #logo {
+    line-height: 200px;
+    font-size: 4em;
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}

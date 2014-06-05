@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Navigation.
+ */
+
+/* Mobile First */
+#main-menu {
+  ul {
+    li {
+      a {
+        @include unstyled-link();
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  #main-menu {
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #main-menu {
+    ul {
+      li {
+        a {
+          padding-right: 2em;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  #main-menu {
+  }
+}
+

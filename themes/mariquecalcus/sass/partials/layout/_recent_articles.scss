@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+#block-views-block-content-recent-article-recent {
+  .content {
+    .first {
+      @include span (4 of 12);
+    }
+    .second {
+      @include span (4 at 5 of 12);
+    }
+    .third {
+      @include span (4 at 9 of 12);
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

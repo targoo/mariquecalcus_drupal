@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Process.
+ */
+
+/* Mobile First */
+.process {
+
+  .col1 {
+    @include span (3 of 12);
+  }
+  .col2 {
+    @include span (3 at 4 of 12);
+  }
+  .col3 {
+    @include span (3 at 7 of 12);
+  }
+  .col4 {
+    @include span (3 at 10 of 12);
+  }
+
+}
+
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}
+

@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Scrolling.
+ */
+
+/* Mobile First */
+@include breakpoint($bp-desktop) {
+  #header.scrolling {
+    background-color: $white;
+
+    #logo {
+      @include image-replace('../images/logos/logo_medium.png', block);
+      padding: 15px;
+    }
+
+  }
+}

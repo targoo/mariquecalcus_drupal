@@ -1,0 +1,57 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+#footer {
+  position: relative;
+  padding: 10em 10%;
+  background: $blue-dark;
+  color: $blue-darker;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+
+  z-index: 1;
+  padding-top: 6em;
+
+  &::before,
+  &::after {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+  &::before {
+    height: 50%;
+    background: $blue;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+  }
+
+}
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}
