@@ -24,6 +24,10 @@ body {
     }
     #main-wrapper {
       background-color: $white;
+      padding-top: 300px;
+    }
+    &.front #main-wrapper{
+      padding-top: 0!important;
     }
   }
 }

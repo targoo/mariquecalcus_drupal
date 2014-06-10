@@ -7,16 +7,16 @@
 .process {
 
   .col1 {
-    @include span (3 of 12);
+    @include span (12 of 12);
   }
   .col2 {
-    @include span (3 at 4 of 12);
+    @include span (12 of 12);
   }
   .col3 {
-    @include span (3 at 7 of 12);
+    @include span (12 of 12);
   }
   .col4 {
-    @include span (3 at 10 of 12);
+    @include span (12 of 12);
   }
 
 }
@@ -24,13 +24,31 @@
 
 
 @include breakpoint($bp-tablet) {
+  .process {
+    .col1 {
+      @include span (3 of 12);
+    }
+    .col2 {
+      @include span (3 at 4 of 12);
+    }
+    .col3 {
+      @include span (3 at 7 of 12);
+    }
+    .col4 {
+      @include span (3 at 10 of 12);
+    }
+  }
 }
 
 
 @include breakpoint($bp-desktop) {
+  .process {
+  }
 }
 
 
 @include breakpoint($bp-large) {
+  .process {
+  }
 }
 

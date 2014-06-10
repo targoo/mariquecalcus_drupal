@@ -4,6 +4,7 @@ mariquecalcus-corescripts:
   js:
     js/vendor/owl-carousel/owl.carousel.js: {}
     js/mariquecalcus.js: {}
+    js/animations.js: {}
   dependencies:
     - core/jquery
 
