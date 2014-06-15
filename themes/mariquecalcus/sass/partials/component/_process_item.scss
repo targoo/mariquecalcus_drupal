@@ -1,0 +1,57 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+.process-item {
+
+  .drawing {
+    position: relative;
+    margin: 1em 3em;
+
+    .drawing-illustration {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-height: 100%;
+      max-width: 100%;
+      width: 100%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      @include transition(all 1s ease-in);
+    }
+
+    .drawing-line {
+      @include transition(all .2s ease-out);
+    }
+
+    .show {
+      @include opacity(1);
+    }
+
+    .hide {
+      @include opacity(0);
+    }
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    text-align: center;
+  }
+
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

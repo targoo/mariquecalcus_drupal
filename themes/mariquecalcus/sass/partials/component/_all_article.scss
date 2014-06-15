@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+.all-article {
+  h4 {
+
+  }
+  .date {
+
+  }
+  .read-more {
+    
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

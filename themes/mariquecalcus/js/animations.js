@@ -74,8 +74,8 @@
     };
 
     SVGEl.prototype.showImage = function() {
-        //classie.add( this.image, 'show' );
-        //classie.add( this.el, 'hide' );
+        $(this.image).attr("class", "drawing-illustration show");
+        $(this.el).attr("class", "drawing-line hide");
     };
 
     function getViewportH() {
@@ -125,16 +125,14 @@
     }
 
     function init() {
-        console.log('init');
 
-        var svgs = Array.prototype.slice.call( document.querySelectorAll( '#process svg' ) ),
+        var svgs = Array.prototype.slice.call( document.querySelectorAll( '.drawing svg' ) ),
             svgArr = new Array(),
             didScroll = false,
             resizeTimeout;
 
-        console.log(svgs);
-
         // the svgs already shown...
+        console.log(svgs);
         svgs.forEach( function( el, i ) {
             var svg = new SVGEl( el );
             svgArr[i] = svg;

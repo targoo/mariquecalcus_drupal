@@ -16,10 +16,6 @@
 #}
 {% for row in rows %}
 
-  <div class="{{ cycle(['first ', 'second', 'third'], loop.index0) }}">
-
-    {{ row.content }}
-
-  </div>
+  {{ row.content }}
 
 {% endfor %}

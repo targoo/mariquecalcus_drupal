@@ -3,16 +3,21 @@
  * Component (Module) elements.
  */
 
-@import 'logo';
+//@import 'logo';
 @import 'navigation';
-@import 'process';
-@import 'carousel';
-@import 'toolbar';
-@import 'recent_articles';
-@import 'splash';
-@import 'footer';
+@import 'all_article';
+@import 'process_item';
+@import 'technology_item';
+@import 'disqus';
+//@import 'process';
+//@import 'carousel';
+//@import 'toolbar';
+//@import 'recent_articles';
+//@import 'splash';
+//@import 'footer';
 
 
+/*
 .drawings {
   position: relative;
   max-height: 800px;
@@ -78,7 +83,6 @@ path.stroke-thin {
   stroke-width: 1;
 }
 
-/* Demo 2 and demo 3 */
 .demo-loading .show,
 .demo-loading .hide {
   -webkit-transition: opacity 0.5s;
@@ -143,7 +147,6 @@ path.stroke-thin {
   max-width: 490px;
 }
 
-/* Positions */
 #logo {
   top: 39px;
 }
@@ -175,3 +178,4 @@ path.stroke-thin {
     font-size: 0.8em;
   }
 }
+*/
