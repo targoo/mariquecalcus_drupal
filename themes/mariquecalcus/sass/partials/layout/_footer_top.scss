@@ -1,0 +1,57 @@
+/**
+ * @file
+ * Process.
+ */
+
+/* Mobile First */
+.footer-top {
+  @include container(96%);
+
+  .col1 {
+    @include span (12 of 12);
+  }
+  .col2 {
+    @include span (12 of 12);
+  }
+  .col3 {
+    @include span (12 of 12);
+  }
+  .col4 {
+    @include span (12 of 12);
+  }
+
+}
+
+
+@include breakpoint($bp-tablet) {
+  .footer-top {
+    @include container(94%);
+
+    .col1 {
+      @include span (3 of 12);
+    }
+    .col2 {
+      @include span (3 at 4 of 12);
+    }
+    .col3 {
+      @include span (3 at 7 of 12);
+    }
+    .col4 {
+      @include span (3 at 10 of 12);
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .footer-top {
+    @include container(90%);
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .footer-top {
+  }
+}
+

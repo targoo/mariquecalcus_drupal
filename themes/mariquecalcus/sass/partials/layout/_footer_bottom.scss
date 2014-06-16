@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Process.
+ */
+
+/* Mobile First */
+.footer-bottom {
+  @include container(96%);
+}
+
+
+@include breakpoint($bp-tablet) {
+  .footer-bottom {
+    @include container(94%);
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .footer-bottom {
+    @include container(90%);
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .footer-bottom {
+  }
+}
