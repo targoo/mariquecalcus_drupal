@@ -3,30 +3,12 @@
  * Global elements.
  */
 
-body {
-  background-color: $blue-lighter;
-  #header {
-    background-color: $blue-lighter;
-  }
-  #main-wrapper {
-    background-color: $white;
-  }
-  #footer {
-    background-color: $blue-dark;
-  }
-}
-
 
 @include breakpoint($bp-desktop) {
   body {
-    background-color: $blue-lighter;
-    color: $blue-darker;
     #header {
-      box-shadow: 0 0px 3px $blue-lighter;
-      background: rgba(255, 255, 255, 0.25);
     }
     #main-wrapper {
-      background-color: $white;
       padding-top: 300px;
     }
     &.front #main-wrapper{

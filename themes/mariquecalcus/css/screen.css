@@ -25,11 +25,10 @@ video {
   height: 0;
   overflow: hidden;
 }
-
-/* line 14, ../sass/partials/base/_responsive.scss */
-.video iframe,
-.video object,
-.video embed {
+/* line 13, ../sass/partials/base/_responsive.scss */
+video iframe,
+video object,
+video embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,7 +43,7 @@ img {
 }
 
 @media \0screen {
-  /* line 31, ../sass/partials/base/_responsive.scss */
+  /* line 30, ../sass/partials/base/_responsive.scss */
   img {
     width: auto;
     /* for ie 8 */
@@ -54,6 +53,20 @@ img {
  * @file
  * Layout elements.
  */
+/**
+ * @file
+ * Global elements.
+ */
+@media (min-width: 992px) {
+  /* line 11, ../sass/partials/layout/_global.scss */
+  body #main-wrapper {
+    padding-top: 300px;
+  }
+  /* line 14, ../sass/partials/layout/_global.scss */
+  body.front #main-wrapper {
+    padding-top: 0 !important;
+  }
+}
 /**
  * @file
  * Layout elements.
@@ -222,48 +235,6 @@ img {
 }
 /**
  * @file
- * Global elements.
- */
-/* line 6, ../sass/partials/layout/_global.scss */
-body {
-  background-color: #e9f2f9;
-}
-/* line 8, ../sass/partials/layout/_global.scss */
-body #header {
-  background-color: #e9f2f9;
-}
-/* line 11, ../sass/partials/layout/_global.scss */
-body #main-wrapper {
-  background-color: white;
-}
-/* line 14, ../sass/partials/layout/_global.scss */
-body #footer {
-  background-color: #3c8dc5;
-}
-
-@media (min-width: 992px) {
-  /* line 21, ../sass/partials/layout/_global.scss */
-  body {
-    background-color: #e9f2f9;
-    color: #241f55;
-  }
-  /* line 24, ../sass/partials/layout/_global.scss */
-  body #header {
-    box-shadow: 0 0px 3px #e9f2f9;
-    background: rgba(255, 255, 255, 0.25);
-  }
-  /* line 28, ../sass/partials/layout/_global.scss */
-  body #main-wrapper {
-    background-color: white;
-    padding-top: 300px;
-  }
-  /* line 32, ../sass/partials/layout/_global.scss */
-  body.front #main-wrapper {
-    padding-top: 0 !important;
-  }
-}
-/**
- * @file
  * Process.
  */
 /* Mobile First */
@@ -415,22 +386,61 @@ body #footer {
  * Navigation.
  */
 /* Mobile First */
-/* line 10, ../sass/partials/component/_navigation.scss */
+/* line 8, ../sass/partials/component/_navigation.scss */
+#main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 15, ../sass/partials/component/_navigation.scss */
 #main-menu ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+  display: block;
+  padding: 1em 1em 1em 1.2em;
+  outline: none;
+  color: #241f55;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: inset 0 -1px rgba(36, 31, 85, 0.2);
+  text-shadow: 0 0 1px rgba(36, 31, 85, 0.1);
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
 #main-menu ul li a:active, #main-menu ul li a:focus {
   outline: none;
 }
+/* line 28, ../sass/partials/component/_navigation.scss */
+#main-menu ul li a:hover {
+  background: rgba(36, 31, 85, 0.2);
+  box-shadow: inset 0 -1px transparent;
+  color: white;
+}
+/* line 35, ../sass/partials/component/_navigation.scss */
+#main-menu ul li:first-child a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2);
+  margin-top: 1em;
+}
 
 @media (min-width: 992px) {
-  /* line 28, ../sass/partials/component/_navigation.scss */
+  /* line 54, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a {
-    padding-right: 2em;
+    padding: 0 2em 0 0;
+    margin: 0 !important;
     text-transform: uppercase;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+  }
+  /* line 62, ../sass/partials/component/_navigation.scss */
+  #main-menu ul li a:hover {
+    background: transparent !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+    color: white;
   }
 }
 /**
@@ -870,5 +880,38 @@ path.stroke-thin {
     line-height: 100px;
     padding: 15px;
     margin: 0;
+  }
+}
+/**
+ * @file
+ * Theme.
+ */
+/**
+ * @file
+ * Global elements.
+ */
+/* line 6, ../sass/partials/theme/_global.scss */
+body {
+  background-color: #e9f2f9;
+  color: #241f55;
+}
+/* line 9, ../sass/partials/theme/_global.scss */
+body #header {
+  background-color: #e9f2f9;
+}
+/* line 12, ../sass/partials/theme/_global.scss */
+body #main-wrapper {
+  background-color: white;
+}
+/* line 14, ../sass/partials/theme/_global.scss */
+body #main-wrapper #footer {
+  background-color: #3c8dc5;
+}
+
+@media (min-width: 992px) {
+  /* line 23, ../sass/partials/theme/_global.scss */
+  body #header {
+    background: rgba(60, 141, 197, 0.25);
+    box-shadow: 0 0 3px #e9f2f9;
   }
 }

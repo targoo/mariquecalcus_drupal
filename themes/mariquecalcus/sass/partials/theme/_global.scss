@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Global elements.
+ */
+
+body {
+  background-color: $blue-lighter;
+  color: $blue-darker;
+  #header {
+    background-color: $blue-lighter;
+  }
+  #main-wrapper {
+    background-color: $white;
+    #footer {
+      background-color: $blue-dark;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  body {
+    #header {
+      background: rgba(60, 141, 197, 0.25);
+      box-shadow: 0 0 3px $blue-lighter;
+    }
+  }
+}

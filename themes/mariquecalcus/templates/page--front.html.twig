@@ -103,7 +103,7 @@
       <a id="mobile-nav" href="#mobile-nav">MENU</a>
     </div>
 
-    <section style="display: block" class="intro">
+    <section style="display: block" id="intro" class="intro">
     </section>
 
     <section style="display: block" id="process" class="decor blue">
@@ -215,11 +215,9 @@
       </div>
     </section>
 
-    {% if page.blog %}
-      <section style="display: block" id="blog" class="decor white blog">
-        {{ page.blog }}
-      </section>
-    {% endif %}
+    <section style="display: block" id="blog" class="decor white blog">
+      {{ page.blog }}
+    </section>
 
     <section style="display: block" id="technology" class="decor blue technology">
 
