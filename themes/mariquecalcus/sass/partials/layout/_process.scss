@@ -5,6 +5,7 @@
 
 /* Mobile First */
 .process {
+  @include container(96%);
 
   .col1 {
     @include span (12 of 12);
@@ -24,6 +25,8 @@
 
 @include breakpoint($bp-tablet) {
   .process {
+    @include container(94%);
+
     .col1 {
       @include span (3 of 12);
     }
@@ -42,6 +45,7 @@
 
 @include breakpoint($bp-desktop) {
   .process {
+    @include container(90%);
   }
 }
 

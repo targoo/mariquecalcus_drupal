@@ -8,7 +8,7 @@
 
   .drawing {
     position: relative;
-    margin: 1em 3em;
+    margin: 1em 1em;
 
     .drawing-illustration {
       position: absolute;
@@ -50,8 +50,23 @@
 
 
 @include breakpoint($bp-desktop) {
+  .process-item {
+
+    .drawing {
+      position: relative;
+      margin: 1em 2em;
+
+    }
+  }
 }
 
-
 @include breakpoint($bp-large) {
+  .process-item {
+
+    .drawing {
+      position: relative;
+      margin: 0em 3em;
+
+    }
+  }
 }

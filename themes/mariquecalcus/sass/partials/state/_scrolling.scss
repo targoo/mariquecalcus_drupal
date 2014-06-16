@@ -9,8 +9,10 @@
     background-color: $white;
 
     #logo {
-      @include image-replace('../images/logos/logo_medium.png', block);
+      line-height: 100px;
       padding: 15px;
+      margin: 0;
+      //@include image-replace('../images/logos/logo_medium.png', block);
     }
 
   }

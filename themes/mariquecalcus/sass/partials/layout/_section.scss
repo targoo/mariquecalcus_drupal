@@ -3,56 +3,55 @@
  * Layout elements.
  */
 
-.decor {
-  position: relative;
-  padding: 5em 10% 15em;
-  text-align: center;
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: '';
-    pointer-events: none;
-  }
-
-  z-index: 1;
-
-  &::before,
-  &::after {
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 75%;
-    background: inherit;
-    @include rotate(-2deg);
-    @include transform-origin(0, 0);
-  }
-
-  &::before {
-    height: 50%;
-    @include rotate(-3deg);
-    @include transform-origin(0, 0);
-  }
-
-}
-
 .white {
   background: $white;
   color: $blue;
-
   &::before {
     background: $blue-lighter;
   }
-
 }
 
 .blue {
   background: $blue-light;
   color: $white;
-
   &::before {
     background: $blue-lighter;
   }
+}
 
+
+@include breakpoint($bp-tablet) {
+  .decor {
+    position: relative;
+    padding: 2em 10% 6em;
+    text-align: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+
+    z-index: 1;
+
+    &::before,
+    &::after {
+      top: 0;
+      left: -25%;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      background: inherit;
+      @include rotate(-2deg);
+      @include transform-origin(0, 0);
+    }
+
+    &::before {
+      height: 50%;
+      @include rotate(-3deg);
+      @include transform-origin(0, 0);
+    }
+
+  }
 }
