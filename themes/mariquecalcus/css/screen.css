@@ -58,11 +58,19 @@ img {
  * Global elements.
  */
 @media (min-width: 992px) {
+  /* line 9, ../sass/partials/layout/_global.scss */
+  body #header {
+    height: 100px;
+  }
   /* line 11, ../sass/partials/layout/_global.scss */
+  body #header .navigation {
+    line-height: 100px;
+  }
+  /* line 15, ../sass/partials/layout/_global.scss */
   body #main-wrapper {
     padding-top: 300px;
   }
-  /* line 14, ../sass/partials/layout/_global.scss */
+  /* line 18, ../sass/partials/layout/_global.scss */
   body.front #main-wrapper {
     padding-top: 0 !important;
   }
@@ -574,52 +582,26 @@ img {
 /* Mobile First */
 /* line 7, ../sass/partials/component/_logo.scss */
 #logo {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  border: 0;
-  background-color: transparent;
-  display: block;
-  background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_small.png?1401311063') no-repeat;
-  width: 50px;
-  height: 50px;
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  text-transform: capitalize;
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
-#logo:active, #logo:focus {
-  outline: none;
+  float: left;
+  display: block;
+  background: url(../images/logos/logo_medium.png) no-repeat center center;
+  width: 240px;
+  height: 50px;
+  background-size: 240px 50px;
+  padding: 0 0 0 10px;
 }
 
-@media (min-width: 768px) {
-  /* line 16, ../sass/partials/component/_logo.scss */
-  #logo {
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    border: 0;
-    background-color: transparent;
-    display: block;
-    background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_medium.png?1401311063') no-repeat;
-    width: 480px;
-    height: 100px;
-  }
-}
 @media (min-width: 992px) {
-  /* line 23, ../sass/partials/component/_logo.scss */
+  /* line 26, ../sass/partials/component/_logo.scss */
   #logo {
-    margin: 50px 20px;
-    line-height: 200px;
-    font-size: 4em;
+    padding: 10px 0 10px 50px;
+    width: 384px;
+    height: 80px;
+    background-size: 384px 80px;
   }
 }
 /**
@@ -658,209 +640,35 @@ html body .container #main-wrapper .intro {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* content styles */
 }
-/* line 30, ../sass/partials/component/_splash.scss */
-html body .container #main-wrapper .intro .fullscreen-cont,
-html body .container #main-wrapper .intro .fullscreen-img {
-  display: block;
-  position: relative;
-  min-width: 100%;
-  min-height: 100%;
-}
-/* line 39, ../sass/partials/component/_splash.scss */
-html body .container #main-wrapper .intro .fullscreen-img {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-/* line 47, ../sass/partials/component/_splash.scss */
+/* line 34, ../sass/partials/component/_splash.scss */
 html body .container #main-wrapper .intro .content {
+  width: 100%;
+  overflow: hidden;
   display: block;
   position: relative;
   z-index: 1;
+  top: 150px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
-  /* line 60, ../sass/partials/component/_splash.scss */
+  /* line 52, ../sass/partials/component/_splash.scss */
   html {
     /* all the tags up to .fullscreen-cont must have this style */
     height: 100%;
   }
-  /* line 63, ../sass/partials/component/_splash.scss */
+  /* line 55, ../sass/partials/component/_splash.scss */
   html body {
     height: 100%;
   }
-  /* line 65, ../sass/partials/component/_splash.scss */
+  /* line 57, ../sass/partials/component/_splash.scss */
   html body .container {
     height: 100%;
     overflow: visible;
   }
 }
-/*
-.drawings {
-  position: relative;
-  max-height: 800px;
-
-  .illustration {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-height: 100%;
-    max-width: 100%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-}
-
-figcaption {
-  margin: 0 auto 0 auto;
-  max-width: 40em;
-  width: 95%;
-  text-align: center;
-  background-color: red;
-
-  h2 {
-    font-weight: 300;
-    font-size: 3em;
-    margin-bottom: 0.2em;
-  }
-
-  p {
-    font-size: 1.3em;
-  }
-}
-
-.show {
-  opacity: 1;
-}
-
-.hide {
-  opacity: 0;
-}
-
-.line-drawing,
-.illustration {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-.line-drawing path {
-  fill: none;
-  stroke: white;
-  stroke-width: 3;
-}
-
-path.line-round {
-  stroke-linecap: round;
-}
-
-path.stroke-medium {
-  stroke-width: 2;
-}
-
-path.stroke-thin {
-  stroke-width: 1;
-}
-
-.demo-loading .show,
-.demo-loading .hide {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-
-.demo-loading section {
-  margin: 2em auto 8em;
-  max-width: 700px;
-  text-align: center;
-}
-
-.demo-loading section figure {
-  position: relative;
-  display: inline-block;
-  margin: 0 15px 20px;
-  width: 200px;
-  text-align: left;
-}
-
-.demo-loading section figure img {
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.demo-loading svg.line-drawing {
-  position: absolute;
-  max-width: 100%;
-  z-index: 10;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.demo-loading svg.line-drawing path {
-  fill: none;
-  stroke-width: 2;
-  stroke: #ddd;
-}
-
-.demo-loading svg.line-drawing path.darker {
-  stroke: #aaa;
-}
-
-.demo-loading svg#rectangle {
-  width: 100%;
-  height: 100%;
-}
-
-.demo-loading svg#headline {
-  top: 50%;
-  margin-top: 2px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.demo-loading svg#related{
-  width: 100%;
-  height: 100%;
-  max-width: 490px;
-}
-
-#logo {
-  top: 39px;
-}
-
-#demo-link-1,
-#demo-link-2,
-#demo-link-3 {
-  top: 148px;
-}
-
-#demo-link-1 {
-  -webkit-transform: translateX(-130px);
-  transform: translateX(-130px);
-}
-
-#demo-link-3 {
-  -webkit-transform: translateX(48px);;
-  transform: translateX(48px);;
-}
-
-@media screen and (max-width: 35.375em) {
-  .demo-loading .headline h1 {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (max-width: 30em) {
-  .related {
-    font-size: 0.8em;
-  }
-}
-*/
 /**
  * @file
  * State.
@@ -874,12 +682,18 @@ path.stroke-thin {
   /* line 8, ../sass/partials/state/_scrolling.scss */
   #header.scrolling {
     background-color: white;
+    height: 50px;
   }
-  /* line 11, ../sass/partials/state/_scrolling.scss */
+  /* line 12, ../sass/partials/state/_scrolling.scss */
+  #header.scrolling .navigation {
+    line-height: 50px;
+  }
+  /* line 16, ../sass/partials/state/_scrolling.scss */
   #header.scrolling #logo {
-    line-height: 100px;
-    padding: 15px;
-    margin: 0;
+    width: 240px;
+    height: 50px;
+    background-size: 240px 50px;
+    padding: 0 0 0 50px;
   }
 }
 /**
@@ -911,7 +725,7 @@ body #main-wrapper #footer {
 @media (min-width: 992px) {
   /* line 23, ../sass/partials/theme/_global.scss */
   body #header {
-    background: rgba(60, 141, 197, 0.25);
+    background: rgba(255, 255, 255, 0.75);
     box-shadow: 0 0 3px #e9f2f9;
   }
 }

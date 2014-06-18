@@ -7,6 +7,10 @@
 @include breakpoint($bp-desktop) {
   body {
     #header {
+      height: 100px;
+      .navigation {
+        line-height: 100px;
+      }
     }
     #main-wrapper {
       padding-top: 300px;

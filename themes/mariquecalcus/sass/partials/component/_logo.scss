@@ -5,25 +5,29 @@
 
 /* Mobile First */
 #logo {
-  @include image-replace('../images/logos/logo_small.png', block);
-  @include hide-text();
-  @include unstyled-link();
   @include transition(all .1s ease-out);
+  float: left;
+  display: block;
+  background: url(../images/logos/logo_medium.png) no-repeat center center;
+  width: 240px;
+  height: 50px;
+  background-size: 240px 50px;
+  padding: 0 0 0 10px;
 }
 
 
 @include breakpoint($bp-tablet) {
   #logo {
-    @include image-replace('../images/logos/logo_medium.png', block);
   }
 }
 
 
 @include breakpoint($bp-desktop) {
   #logo {
-    margin: 50px 20px;
-    line-height: 200px;
-    font-size: 4em;
+    padding: 10px 0 10px 50px;
+    width: 384px;
+    height: 80px;
+    background-size: 384px 80px;
   }
 }
 

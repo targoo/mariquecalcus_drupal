@@ -86,7 +86,6 @@
   <header id="header">
     <div class="logo">
       <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
-        <span>{{ site_name }}</span>
       </a>
     </div>
 
@@ -104,6 +103,13 @@
     </div>
 
     <section style="display: block" id="intro" class="intro">
+      <div class="content">
+        <h1>We build great websites and powerful applications</h1>
+        <p>
+          Web technologies can be very complex nowadays.<br>
+          Let us worry about it so you can focus on your business.
+        </p>
+      </div>
     </section>
 
     <section style="display: block" id="process" class="decor blue">
@@ -216,6 +222,8 @@
     </section>
 
     <section style="display: block" id="blog" class="decor white blog">
+      <span>LATEST</span>
+      <h2>Our latest news and recent blog posts</h2>
       {{ page.blog }}
     </section>
 
@@ -336,6 +344,13 @@
 
       </div>
 
+    </section>
+
+    <section style="display: block" id="work" class="decor white work">
+      <span>WORK</span>
+      <h2>Our portfolio</h2>
+      <p>Over the last 7 years we have built great websites driven by the latest technologies</p>
+      {{ page.work }}
     </section>
 
     <footer id="footer" class="footer">

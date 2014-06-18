@@ -7,12 +7,17 @@
 @include breakpoint($bp-desktop) {
   #header.scrolling {
     background-color: $white;
+    height: 50px;
+
+    .navigation {
+      line-height: 50px;
+    }
 
     #logo {
-      line-height: 100px;
-      padding: 15px;
-      margin: 0;
-      //@include image-replace('../images/logos/logo_medium.png', block);
+      width: 240px;
+      height: 50px;
+      background-size: 240px 50px;
+      padding: 0 0 0 50px;
     }
 
   }

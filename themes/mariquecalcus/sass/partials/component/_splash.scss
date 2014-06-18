@@ -27,27 +27,19 @@ html {
           -o-background-size: cover;
           background-size: cover;
 
-          .fullscreen-cont,
-          .fullscreen-img {
-            display:block;
-            position:relative;
-            min-width:100%;
-            min-height:100%;
+          h1 {
+
           }
 
-          /* content styles */
-          .fullscreen-img {
-            display:block;
-            position:absolute;
-            z-index:1;
-
-            background-size:cover;
-            background-position:50% 50%;
-          }
           .content {
+            width: 100%;
+            overflow: hidden;
             display:block;
             position:relative;
             z-index:1;
+            top: 150px;
+            text-align: center;
+            font-size: 1.5em;
           }
         }
       }
