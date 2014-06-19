@@ -25,6 +25,7 @@
     position: relative;
     padding: 2em 10% 6em;
     text-align: center;
+    z-index: 1;
 
     &::before,
     &::after {
@@ -33,7 +34,6 @@
       pointer-events: none;
     }
 
-    z-index: 1;
 
     &::before,
     &::after {

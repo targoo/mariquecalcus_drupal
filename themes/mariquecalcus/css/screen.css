@@ -107,7 +107,7 @@ img {
     text-align: center;
     z-index: 1;
   }
-  /* line 29, ../sass/partials/layout/_section.scss */
+  /* line 30, ../sass/partials/layout/_section.scss */
   .decor::before, .decor::after {
     position: absolute;
     content: '';
@@ -380,6 +380,91 @@ img {
   }
   /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
   .footer-bottom:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/**
+ * @file
+ * Recent article.
+ */
+/* Mobile First */
+/* line 8, ../sass/partials/layout/_recent_articles.scss */
+#block-views-block-content-recent-articles .view-content {
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+#block-views-block-content-recent-articles .view-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../sass/partials/layout/_recent_articles.scss */
+#block-views-block-content-recent-articles .view-content .col1 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 13, ../sass/partials/layout/_recent_articles.scss */
+#block-views-block-content-recent-articles .view-content .col2 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 16, ../sass/partials/layout/_recent_articles.scss */
+#block-views-block-content-recent-articles .view-content .col3 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 25, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #block-views-block-content-recent-articles .view-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 27, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content .col1 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 30, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content .col2 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 33, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content .col3 {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 43, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #block-views-block-content-recent-articles .view-content:after {
     content: " ";
     display: block;
     clear: both;
@@ -669,6 +754,16 @@ html body .container #main-wrapper .intro .content {
     overflow: visible;
   }
 }
+/**
+ * @file
+ * Logo.
+ */
+/* Mobile First */
+/* line 12, ../sass/partials/component/_recent_articles.scss */
+#block-views-block-content-recent-article-recent .content .views-field-body h2 {
+  font-size: 1em;
+}
+
 /**
  * @file
  * State.

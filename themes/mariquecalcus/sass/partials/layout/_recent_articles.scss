@@ -1,29 +1,49 @@
 /**
  * @file
- * Logo.
+ * Recent article.
  */
 
 /* Mobile First */
-#block-views-block-content-recent-article-recent {
-  .content {
-    .first {
-      @include span (4 of 12);
+#block-views-block-content-recent-articles {
+  .view-content {
+    @include container(96%);
+    .col1 {
+      @include span (12 of 12);
     }
-    .second {
-      @include span (4 at 5 of 12);
+    .col2 {
+      @include span (12 of 12);
     }
-    .third {
-      @include span (4 at 9 of 12);
+    .col3 {
+      @include span (12 of 12);
     }
   }
 }
 
 
 @include breakpoint($bp-tablet) {
+  #block-views-block-content-recent-articles {
+    .view-content {
+      @include container(94%);
+      .col1 {
+        @include span (4 of 12);
+      }
+      .col2 {
+        @include span (4  at 5 of 12);
+      }
+      .col3 {
+        @include span (4 at 9 of 12);
+      }
+    }
+  }
 }
 
 
 @include breakpoint($bp-desktop) {
+  #block-views-block-content-recent-articles {
+    .view-content {
+      @include container(90%);
+    }
+  }
 }
 
 
