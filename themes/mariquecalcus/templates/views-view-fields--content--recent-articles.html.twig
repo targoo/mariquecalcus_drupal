@@ -30,22 +30,21 @@
  * @ingroup themeable
  */
 #}
-<!--
-THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
-See http://api.drupal.org/api/function/theme_views_view_fields/8 for details.
-After copying this file to your theme's folder and customizing it, remove this
-HTML comment.
--->
 
-<article class="all-article">
-  <h4>{{ fields['title'].content }}</h4>
-  <div class="date">
-    Create on {{ fields['created_1'].content|date('d/m/Y') }}
-    by {{ fields['name'].content }}
-    and updated on {{ fields['changed'].content|date('d/m/Y') }}
+<article class="recent-article">
+  <h4 class="title">{{ fields['title'].content }}</h4>
+  <span class="created">
+    {{ fields['created_1'].content|date('d/m/Y') }}
+  </span>
+  <span class="updated">
+    {{ fields['changed'].content|date('d/m/Y') }}
+  </span>
+  {{ fields['body'].content }}
+
+  <div class="read-more">
+    <a href="{{ fields['path'].content }}">More info</a>
   </div>
-  <p>
-    {{ fields['body'].content }}
-    <a href="{{ fields['path'].content }}" class="read-more">More info <i class="fa fa-angle-right"></i></a>
-  </p>
+  <span style="display: none" class="author">
+    {{ fields['name'].content }}
+  </span>
 </article>

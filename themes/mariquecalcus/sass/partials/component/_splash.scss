@@ -37,7 +37,7 @@ html {
             display:block;
             position:relative;
             z-index:1;
-            top: 150px;
+            top: 0;
             text-align: center;
             font-size: 1.5em;
           }
@@ -57,6 +57,20 @@ html {
       .container {
         height:100%;
         overflow: visible;
+        #main-wrapper {
+          height:100%;
+          .intro {
+
+            h1 {
+
+            }
+
+            .content {
+              top: 150px;
+            }
+          }
+        }
+
       }
     }
   }

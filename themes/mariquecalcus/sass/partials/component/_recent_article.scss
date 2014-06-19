@@ -1,0 +1,62 @@
+/**
+ * @file
+ * Recent article.
+ */
+
+/* Mobile First */
+.recent-article {
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    a {
+      @include unstyled-link;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .created {
+    float: left;
+    font-size: 0.8em;
+    color: $grey;
+  }
+
+  .updated {
+    float: right;
+    font-size: 0.8em;
+    color: $grey;
+  }
+
+  .field-content {
+    text-align: justify;
+    clear: both;
+  }
+
+  .read-more {
+    text-align: right;
+    a {
+      @include unstyled-link;
+    }
+  }
+
+  .author {
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .recent-article {
+    margin: 1em 0;
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

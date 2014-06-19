@@ -111,6 +111,9 @@
     }
 
     function inViewport( el, h ) {
+        console.log('inViewport');
+        console.log(el);
+        console.log(h);
         var elH = el.offsetHeight,
             scrolled = scrollY(),
             viewed = scrolled + getViewportH(),
@@ -120,6 +123,12 @@
         // if 1, the element is considered in the viewport only when it's fully inside
         // value in percentage (1 >= h >= 0)
             h = h || 0;
+
+        console.log(elTop + elH * h);
+        console.log(viewed);
+
+        console.log(elBottom);
+        console.log(scrolled);
 
         return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
     }
@@ -132,7 +141,6 @@
             resizeTimeout;
 
         // the svgs already shown...
-        console.log(svgs);
         svgs.forEach( function( el, i ) {
             var svg = new SVGEl( el );
             svgArr[i] = svg;
@@ -146,6 +154,7 @@
         } );
 
         var scrollHandler = function() {
+                //console.log('scrollHandler');
                 if( !didScroll ) {
                     didScroll = true;
                     setTimeout( function() { scrollPage(); }, 60 );

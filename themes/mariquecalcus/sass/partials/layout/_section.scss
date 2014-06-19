@@ -23,7 +23,7 @@
 @include breakpoint($bp-tablet) {
   .decor {
     position: relative;
-    padding: 2em 10% 6em;
+    padding: 6em 0 6em;
     text-align: center;
     z-index: 1;
 
@@ -40,9 +40,10 @@
       top: 0;
       left: -25%;
       z-index: -1;
-      width: 150%;
+      width: 125%;
       height: 75%;
       background: inherit;
+      pointer-events: none;
       @include rotate(-2deg);
       @include transform-origin(0, 0);
     }
@@ -51,6 +52,7 @@
       height: 50%;
       @include rotate(-3deg);
       @include transform-origin(0, 0);
+      background: $blue-lighter;
     }
 
   }

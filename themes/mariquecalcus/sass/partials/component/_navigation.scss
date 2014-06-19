@@ -43,12 +43,6 @@
 
 @include breakpoint($bp-tablet) {
   #main-menu {
-  }
-}
-
-
-@include breakpoint($bp-desktop) {
-  #main-menu {
     ul {
       li {
         a {
@@ -58,17 +52,24 @@
           -webkit-box-shadow: none;
           -moz-box-shadow: none;
           box-shadow: none !important;
+          color: $blue-darker;
 
           &:hover {
             background: transparent!important;;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none !important;
-            color: $white;
+            color: $blue-darker;
           }
         }
       }
     }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #main-menu {
   }
 }
 

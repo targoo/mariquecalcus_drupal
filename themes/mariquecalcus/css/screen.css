@@ -70,7 +70,7 @@ img {
   body #main-wrapper {
     padding-top: 300px;
   }
-  /* line 18, ../sass/partials/layout/_global.scss */
+  /* line 19, ../sass/partials/layout/_global.scss */
   body.front #main-wrapper {
     padding-top: 0 !important;
   }
@@ -103,7 +103,7 @@ img {
   /* line 24, ../sass/partials/layout/_section.scss */
   .decor {
     position: relative;
-    padding: 2em 10% 6em;
+    padding: 6em 0 6em;
     text-align: center;
     z-index: 1;
   }
@@ -118,9 +118,10 @@ img {
     top: 0;
     left: -25%;
     z-index: -1;
-    width: 150%;
+    width: 125%;
     height: 75%;
     background: inherit;
+    pointer-events: none;
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
@@ -130,7 +131,7 @@ img {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
   }
-  /* line 50, ../sass/partials/layout/_section.scss */
+  /* line 51, ../sass/partials/layout/_section.scss */
   .decor::before {
     height: 50%;
     -moz-transform: rotate(-3deg);
@@ -141,6 +142,7 @@ img {
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
+    background: #e9f2f9;
   }
 }
 /**
@@ -517,8 +519,8 @@ img {
   margin-top: 1em;
 }
 
-@media (min-width: 992px) {
-  /* line 54, ../sass/partials/component/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 48, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a {
     padding: 0 2em 0 0;
     margin: 0 !important;
@@ -526,14 +528,15 @@ img {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none !important;
+    color: #241f55;
   }
-  /* line 62, ../sass/partials/component/_navigation.scss */
+  /* line 57, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a:hover {
     background: transparent !important;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none !important;
-    color: white;
+    color: #241f55;
   }
 }
 /**
@@ -733,7 +736,7 @@ html body .container #main-wrapper .intro .content {
   display: block;
   position: relative;
   z-index: 1;
-  top: 150px;
+  top: 0;
   text-align: center;
   font-size: 1.5em;
 }
@@ -753,17 +756,77 @@ html body .container #main-wrapper .intro .content {
     height: 100%;
     overflow: visible;
   }
+  /* line 60, ../sass/partials/component/_splash.scss */
+  html body .container #main-wrapper {
+    height: 100%;
+  }
+  /* line 68, ../sass/partials/component/_splash.scss */
+  html body .container #main-wrapper .intro .content {
+    top: 150px;
+  }
 }
 /**
  * @file
- * Logo.
+ * Recent article.
  */
 /* Mobile First */
-/* line 12, ../sass/partials/component/_recent_articles.scss */
-#block-views-block-content-recent-article-recent .content .views-field-body h2 {
-  font-size: 1em;
+/* line 9, ../sass/partials/component/_recent_article.scss */
+.recent-article .title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* line 12, ../sass/partials/component/_recent_article.scss */
+.recent-article .title a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+.recent-article .title a:active, .recent-article .title a:focus {
+  outline: none;
+}
+/* line 15, ../sass/partials/component/_recent_article.scss */
+.recent-article .title a:hover {
+  color: #0db14b;
+}
+/* line 21, ../sass/partials/component/_recent_article.scss */
+.recent-article .created {
+  float: left;
+  font-size: 0.8em;
+  color: gray;
+}
+/* line 27, ../sass/partials/component/_recent_article.scss */
+.recent-article .updated {
+  float: right;
+  font-size: 0.8em;
+  color: gray;
+}
+/* line 33, ../sass/partials/component/_recent_article.scss */
+.recent-article .field-content {
+  text-align: justify;
+  clear: both;
+}
+/* line 38, ../sass/partials/component/_recent_article.scss */
+.recent-article .read-more {
+  text-align: right;
+}
+/* line 40, ../sass/partials/component/_recent_article.scss */
+.recent-article .read-more a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+.recent-article .read-more a:active, .recent-article .read-more a:focus {
+  outline: none;
 }
 
+@media (min-width: 768px) {
+  /* line 51, ../sass/partials/component/_recent_article.scss */
+  .recent-article {
+    margin: 1em 0;
+  }
+}
 /**
  * @file
  * State.
