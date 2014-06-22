@@ -10,7 +10,10 @@ body {
     background-color: $blue-lighter;
   }
   #main-wrapper {
-    background-color: $white;
+    #main {
+      background-color: $white;
+      max-width: 100%;
+    }
     #footer {
       background-color: $blue-dark;
     }

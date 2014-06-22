@@ -107,43 +107,6 @@ img {
     text-align: center;
     z-index: 1;
   }
-  /* line 30, ../sass/partials/layout/_section.scss */
-  .decor::before, .decor::after {
-    position: absolute;
-    content: '';
-    pointer-events: none;
-  }
-  /* line 38, ../sass/partials/layout/_section.scss */
-  .decor::before, .decor::after {
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 125%;
-    height: 75%;
-    background: inherit;
-    pointer-events: none;
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-  }
-  /* line 51, ../sass/partials/layout/_section.scss */
-  .decor::before {
-    height: 50%;
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    -moz-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: #e9f2f9;
-  }
 }
 /**
  * @file
@@ -248,41 +211,41 @@ img {
  * Process.
  */
 /* Mobile First */
-/* line 7, ../sass/partials/layout/_footer_top.scss */
-.footer-top {
+/* line 7, ../sass/partials/layout/_footer_center.scss */
+.footer-center {
   max-width: 96%;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-.footer-top:after {
+.footer-center:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 10, ../sass/partials/layout/_footer_top.scss */
-.footer-top .col1 {
+/* line 10, ../sass/partials/layout/_footer_center.scss */
+.footer-center .col1 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 13, ../sass/partials/layout/_footer_top.scss */
-.footer-top .col2 {
+/* line 13, ../sass/partials/layout/_footer_center.scss */
+.footer-center .col2 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 16, ../sass/partials/layout/_footer_top.scss */
-.footer-top .col3 {
+/* line 16, ../sass/partials/layout/_footer_center.scss */
+.footer-center .col3 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 19, ../sass/partials/layout/_footer_top.scss */
-.footer-top .col4 {
+/* line 19, ../sass/partials/layout/_footer_center.scss */
+.footer-center .col4 {
   width: 100%;
   float: left;
   margin-left: 0;
@@ -290,52 +253,52 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 27, ../sass/partials/layout/_footer_top.scss */
-  .footer-top {
+  /* line 27, ../sass/partials/layout/_footer_center.scss */
+  .footer-center {
     max-width: 94%;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-  .footer-top:after {
+  .footer-center:after {
     content: " ";
     display: block;
     clear: both;
   }
-  /* line 30, ../sass/partials/layout/_footer_top.scss */
-  .footer-top .col1 {
+  /* line 30, ../sass/partials/layout/_footer_center.scss */
+  .footer-center .col1 {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 33, ../sass/partials/layout/_footer_top.scss */
-  .footer-top .col2 {
+  /* line 33, ../sass/partials/layout/_footer_center.scss */
+  .footer-center .col2 {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 36, ../sass/partials/layout/_footer_top.scss */
-  .footer-top .col3 {
+  /* line 36, ../sass/partials/layout/_footer_center.scss */
+  .footer-center .col3 {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 39, ../sass/partials/layout/_footer_top.scss */
-  .footer-top .col4 {
+  /* line 39, ../sass/partials/layout/_footer_center.scss */
+  .footer-center .col4 {
     width: 23.72881%;
     float: right;
     margin-right: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 47, ../sass/partials/layout/_footer_top.scss */
-  .footer-top {
+  /* line 47, ../sass/partials/layout/_footer_center.scss */
+  .footer-center {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-  .footer-top:after {
+  .footer-center:after {
     content: " ";
     display: block;
     clear: both;
@@ -674,7 +637,6 @@ img {
   -o-transition: all 0.1s ease-out;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-  float: left;
   display: block;
   background: url(../images/logos/logo_medium.png) no-repeat center center;
   width: 240px;
@@ -683,6 +645,12 @@ img {
   padding: 0 0 0 10px;
 }
 
+@media (min-width: 768px) {
+  /* line 19, ../sass/partials/component/_logo.scss */
+  #logo {
+    float: left;
+  }
+}
 @media (min-width: 992px) {
   /* line 26, ../sass/partials/component/_logo.scss */
   #logo {
@@ -871,17 +839,18 @@ body {
 body #header {
   background-color: #e9f2f9;
 }
-/* line 12, ../sass/partials/theme/_global.scss */
-body #main-wrapper {
+/* line 13, ../sass/partials/theme/_global.scss */
+body #main-wrapper #main {
   background-color: white;
+  max-width: 100%;
 }
-/* line 14, ../sass/partials/theme/_global.scss */
+/* line 17, ../sass/partials/theme/_global.scss */
 body #main-wrapper #footer {
   background-color: #3c8dc5;
 }
 
 @media (min-width: 992px) {
-  /* line 23, ../sass/partials/theme/_global.scss */
+  /* line 26, ../sass/partials/theme/_global.scss */
   body #header {
     background: rgba(255, 255, 255, 0.75);
     box-shadow: 0 0 3px #e9f2f9;

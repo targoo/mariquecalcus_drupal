@@ -6,7 +6,6 @@
 /* Mobile First */
 #logo {
   @include transition(all .1s ease-out);
-  float: left;
   display: block;
   background: url(../images/logos/logo_medium.png) no-repeat center center;
   width: 240px;
@@ -18,6 +17,7 @@
 
 @include breakpoint($bp-tablet) {
   #logo {
+    float: left;
   }
 }
 
