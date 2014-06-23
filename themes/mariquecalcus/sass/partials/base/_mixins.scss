@@ -3,6 +3,75 @@
  * Mixins.
  */
 
+@mixin effect-ribbon-corner(
+$position: 'top left',
+$width: 10em, $height: 2em, $lines: 1,
+$skin: 'classic', $width-add: 0, $height-add: 0,
+$offset-v: 0, $offset-h: 0
+)
+{
+  position: absolute;
+  text-align: center;
+  @include box-sizing(border-box);
+
+  width: $width;
+  height: $height;
+  line-height: $height / $lines;
+
+  // @if ($position == top left)
+  $position-v: top;
+  $position-h: left;
+  $angle: -45deg;
+  $transform-origin-x: 0;
+  $transform-origin-y: 100%;
+
+  @if ($position == 'top right')
+  {
+    //$position-v: top;
+    $position-h: right;
+    $angle: 45deg;
+    $transform-origin-x: 100%;
+    //$transform-origin-y: 100%;
+  }
+  @else if ($position == 'bottom right')
+  {
+    $position-v: bottom;
+    $position-h: right;
+    //$angle: -45deg
+    $transform-origin-x: 100%;
+    $transform-origin-y: 0;
+  }
+  @else if ($position == 'bottom left')
+  {
+    $position-v: bottom;
+    //$position-h: left;
+    $angle: 45deg;
+    //$transform-origin-x: 0;
+    $transform-origin-y: 0;
+  }
+
+  @if ($skin == 'classic')
+  {
+    @extend %effect-ribbon-skin-classic;
+    // skin border size to remove;
+    $width-add: .1em;
+    $height-add: .1em;
+  }
+  //@elseif ($skin == 'github')
+  //{
+  //    @extend %effect-ribbon-skin-github;
+  //}
+
+  // here is the awesome trick !
+  $value: pow($width + $width-add, 2) / 2 ;
+  #{$position-v}: sqrt($value) - $height - $height-add + $offset-v;
+  #{$position-h}: 0 + $offset-h;
+
+  @include transform(rotate($angle));
+  @include transform-origin($transform-origin-x, $transform-origin-y);
+}
+
+
 @mixin buttonize($color) {
   @include transition(background-color .5s ease-in);
   @include background-image(none);
