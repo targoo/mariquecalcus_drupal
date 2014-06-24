@@ -68,11 +68,7 @@ img {
   }
   /* line 15, ../sass/partials/layout/_global.scss */
   body #main-wrapper {
-    padding-top: 300px;
-  }
-  /* line 19, ../sass/partials/layout/_global.scss */
-  body.front #main-wrapper {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
 }
 /**
@@ -195,6 +191,20 @@ img {
 @media (min-width: 992px) {
   /* line 47, ../sass/partials/layout/_process.scss */
   .process {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .process:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 54, ../sass/partials/layout/_process.scss */
+  .process {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -293,6 +303,20 @@ img {
 @media (min-width: 992px) {
   /* line 47, ../sass/partials/layout/_footer_center.scss */
   .footer-center {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .footer-center:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 54, ../sass/partials/layout/_footer_center.scss */
+  .footer-center {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -338,6 +362,20 @@ img {
 }
 @media (min-width: 992px) {
   /* line 20, ../sass/partials/layout/_footer_bottom.scss */
+  .footer-bottom {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .footer-bottom:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 27, ../sass/partials/layout/_footer_bottom.scss */
   .footer-bottom {
     max-width: 90%;
     margin-left: auto;
@@ -424,12 +462,120 @@ img {
 @media (min-width: 992px) {
   /* line 43, ../sass/partials/layout/_recent_articles.scss */
   #block-views-block-content-recent-articles .view-content {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #block-views-block-content-recent-articles .view-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 52, ../sass/partials/layout/_recent_articles.scss */
+  #block-views-block-content-recent-articles .view-content {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
   #block-views-block-content-recent-articles .view-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/**
+ * @file
+ * Main elements.
+ */
+/* Mobile First */
+/* line 7, ../sass/partials/layout/_main.scss */
+#main {
+  padding-top: 200px;
+}
+/* line 9, ../sass/partials/layout/_main.scss */
+#main #content-wrapper {
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+#main #content-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 11, ../sass/partials/layout/_main.scss */
+#main #content-wrapper #page-content {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 15, ../sass/partials/layout/_main.scss */
+#main #content-wrapper #aside_right {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 25, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #main #content-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 28, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper #aside_right {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 39, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #main #content-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 42, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper #page-content {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 46, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper #aside_right {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 57, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  #main #content-wrapper:after {
     content: " ";
     display: block;
     clear: both;
@@ -770,7 +916,7 @@ html body .container #main-wrapper .intro .content {
   color: gray;
 }
 /* line 33, ../sass/partials/component/_recent_article.scss */
-.recent-article .field-content {
+.recent-article .content {
   text-align: justify;
   clear: both;
 }
@@ -793,6 +939,35 @@ html body .container #main-wrapper .intro .content {
   /* line 51, ../sass/partials/component/_recent_article.scss */
   .recent-article {
     margin: 1em 0;
+  }
+}
+/**
+ * @file
+ * Article.
+ */
+/* Mobile First */
+/* line 12, ../sass/partials/component/_article.scss */
+.node-article .content .field-name-field-image {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  /* line 27, ../sass/partials/component/_article.scss */
+  .node-article header {
+    float: left;
+    witdh: 24%;
+  }
+  /* line 31, ../sass/partials/component/_article.scss */
+  .node-article .content {
+    float: right;
+    width: 74%;
+  }
+  /* line 35, ../sass/partials/component/_article.scss */
+  .node-article .content .field-name-field-image {
+    width: 75%;
+    margin-left: -35%;
+    float: left;
+    margin-right: 3%;
   }
 }
 /**

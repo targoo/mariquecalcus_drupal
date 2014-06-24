@@ -31,6 +31,12 @@
  */
 #}
 
+<!--ol
+  {% for key, value in fields  %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ol-->
+
 <article class="recent-article">
   <h4 class="title">{{ fields['title'].content }}</h4>
   <span class="created">
@@ -39,7 +45,9 @@
   <span class="updated">
     {{ fields['changed'].content|date('d/m/Y') }}
   </span>
-  {{ fields['body'].content }}
+  <div class="content">
+  {{ fields['field_intro'].content }}
+  </div>
 
   <div class="read-more">
     <a href="{{ fields['path'].content }}">More info</a>

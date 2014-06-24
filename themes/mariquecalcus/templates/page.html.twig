@@ -103,28 +103,24 @@
 
     <main id="main" role="main">
 
-      {% if page.aside_left %}
-        <aside id="aside_left">
-          {{ page.aside_left }}
-        </aside>
-      {% endif %}
+      <div id="content-wrapper">
 
-      {% if page.content %}
-        <div id="content">
-          {% if title %}
-            <h1 class="title" id="page-title">
-              {{ title }}
-            </h1>
-          {% endif %}
-          {{ page.content }}
+        {% if title %}
+          <h1 class="title" id="page-title">
+            {{ title }}
+          </h1>
+        {% endif %}
+
+        <div id="page-content">
+        {{ page.content }}
         </div>
-      {% endif %}
 
-      {% if page.aside_right %}
         <aside id="aside_right">
           {{ page.aside_right }}
+          ASIDE
         </aside>
-      {% endif %}
+
+      </div>
 
     </main>
 

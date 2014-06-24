@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.node-article {
+  header {
+  }
+  .content {
+
+    .field-name-field-image {
+      width: 100%;
+    }
+  }
+  footer {
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+  .node-article {
+    header {
+      float: left;
+      witdh: 24%;
+    }
+    .content {
+      float: right;
+      width: 74%;
+
+      .field-name-field-image {
+        width: 75%;
+        margin-left: -35%;
+        float: left;
+        margin-right: 3%;
+      }
+    }
+    footer {
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}

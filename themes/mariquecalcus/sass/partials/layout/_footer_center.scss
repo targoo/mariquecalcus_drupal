@@ -45,13 +45,14 @@
 
 @include breakpoint($bp-desktop) {
   .footer-center {
-    @include container(90%);
+    @include container(92%);
   }
 }
 
 
 @include breakpoint($bp-large) {
   .footer-center {
+    @include container(90%);
   }
 }
 

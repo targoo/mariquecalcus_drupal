@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Main elements.
+ */
+
+/* Mobile First */
+#main {
+  padding-top: 200px;
+  #content-wrapper {
+    @include container(96%);
+    #page-content {
+      @include span (12 of 12);
+    }
+
+    #aside_right {
+      @include span (12 of 12);
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  #main {
+
+    #content-wrapper {
+      @include container(94%);
+
+      #aside_right {
+        display: block;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #main {
+
+    #content-wrapper {
+      @include container(92%);
+
+      #page-content {
+        @include span (9 of 12);
+      }
+
+      #aside_right {
+        @include span (3 at 10 of 12);
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  #main {
+
+    #content-wrapper {
+      @include container(90%);
+    }
+  }
+}

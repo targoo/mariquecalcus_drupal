@@ -41,11 +41,16 @@
 @include breakpoint($bp-desktop) {
   #block-views-block-content-recent-articles {
     .view-content {
-      @include container(90%);
+      @include container(92%);
     }
   }
 }
 
 
 @include breakpoint($bp-large) {
+  #block-views-block-content-recent-articles {
+    .view-content {
+      @include container(90%);
+    }
+  }
 }

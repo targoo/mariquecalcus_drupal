@@ -13,11 +13,10 @@
       }
     }
     #main-wrapper {
-      //overflow-x: hidden;
-      padding-top: 300px;
+      padding-top: 0;
     }
-    &.front #main-wrapper{
-      padding-top: 0!important;
-    }
+    //&.front #main-wrapper{
+    //   padding-top: 0!important;
+    //}
   }
 }
