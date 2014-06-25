@@ -972,6 +972,41 @@ html body .container #main-wrapper .intro .content {
 }
 /**
  * @file
+ * Logo.
+ */
+/* Mobile First */
+/* line 9, ../sass/partials/component/_mobile_navigation.scss */
+#mobile-container #mobile-nav {
+  float: left;
+}
+/* line 12, ../sass/partials/component/_mobile_navigation.scss */
+#mobile-container #mobile-nav .fa {
+  color: #0db14b;
+  font-size: 30px;
+  padding: 13px;
+}
+/* line 17, ../sass/partials/component/_mobile_navigation.scss */
+#mobile-container #mobile-nav .fa:before {
+  content: "\f0c9";
+}
+/* line 23, ../sass/partials/component/_mobile_navigation.scss */
+#mobile-container #mobile-logo {
+  display: block;
+  background: url(../images/logos/logo_medium.png) no-repeat center center;
+  width: 240px;
+  height: 50px;
+  background-size: 240px 50px;
+  padding: 0 0 0 100px;
+}
+
+@media (min-width: 768px) {
+  /* line 35, ../sass/partials/component/_mobile_navigation.scss */
+  #mobile-container {
+    display: none !important;
+  }
+}
+/**
+ * @file
  * State.
  */
 /**
@@ -997,6 +1032,22 @@ html body .container #main-wrapper .intro .content {
     padding: 0 0 0 50px;
   }
 }
+/**
+ * @file
+ * Active.
+ */
+/* line 11, ../sass/partials/state/_active.scss */
+.active .mobile-container #mobile-nav .fa {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 14, ../sass/partials/state/_active.scss */
+.active .mobile-container #mobile-nav .fa:before {
+  content: "\f067";
+}
+
 /**
  * @file
  * Theme.

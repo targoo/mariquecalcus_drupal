@@ -38,13 +38,17 @@
 </ol-->
 
 <article class="recent-article">
+
   <h4 class="title">{{ fields['title'].content }}</h4>
+
   <span class="created">
     {{ fields['created_1'].content|date('d/m/Y') }}
   </span>
+
   <span class="updated">
     {{ fields['changed'].content|date('d/m/Y') }}
   </span>
+
   <div class="content">
   {{ fields['field_intro'].content }}
   </div>
@@ -52,7 +56,9 @@
   <div class="read-more">
     <a href="{{ fields['path'].content }}">More info</a>
   </div>
+
   <span style="display: none" class="author">
     {{ fields['name'].content }}
   </span>
+
 </article>

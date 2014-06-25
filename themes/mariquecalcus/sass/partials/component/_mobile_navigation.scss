@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+#mobile-container {
+
+  #mobile-nav {
+    float: left;
+
+    .fa {
+      color: $green;
+      font-size: 30px;
+      padding: 13px;
+
+      &:before {
+        content: "\f0c9";
+      }
+    }
+  }
+
+  #mobile-logo {
+    display: block;
+    background: url(../images/logos/logo_medium.png) no-repeat center center;
+    width: 240px;
+    height: 50px;
+    background-size: 240px 50px;
+    padding: 0 0 0 100px;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  #mobile-container {
+    display: none!important;
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #mobile-container {
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  #mobile-container {
+  }
+}

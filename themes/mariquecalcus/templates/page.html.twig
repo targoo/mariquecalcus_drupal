@@ -80,6 +80,19 @@
  */
 #}
 
+<ol>
+  {% for key, value in node  %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ol>
+
+
+{ user }}
+
+{{ node.uuid }}
+
+{ page }}
+
 <div class="container">
 
   <header id="header">
@@ -97,8 +110,11 @@
 
   <div id="main-wrapper">
 
-    <div class="mobile-container">
-      <a id="mobile-nav" href="#mobile-nav">MENU</a>
+    <div id="mobile-container">
+      <a id="mobile-nav" href="#mobile-nav">
+        <i class="fa fa-2"></i>
+      </a>
+      <a id="mobile-logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" ></a>
     </div>
 
     <main id="main" role="main">
@@ -111,13 +127,18 @@
           </h1>
         {% endif %}
 
+        {{ tabs }}
+
+        {% if action_links %}
+          <nav class="action-links">{{ action_links }}</nav>
+        {% endif %}
+
         <div id="page-content">
         {{ page.content }}
         </div>
 
         <aside id="aside_right">
           {{ page.aside_right }}
-          ASIDE
         </aside>
 
       </div>

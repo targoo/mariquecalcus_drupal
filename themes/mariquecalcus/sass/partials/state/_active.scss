@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Active.
+ */
+
+.active {
+  .mobile-container {
+
+    #mobile-nav {
+
+      .fa {
+        @include transform(rotate(45deg));
+
+        &:before {
+          content: "\f067";
+        }
+      }
+    }
+
+  }
+}
