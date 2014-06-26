@@ -3,6 +3,15 @@
  * Layout elements.
  */
 
+.decor {
+  text-align: center;
+  padding: 2em 0 2em;
+
+  .content {
+    @include container(96%);
+  }
+}
+
 .white {
   background: $white;
   color: $blue;
@@ -23,9 +32,12 @@
 @include breakpoint($bp-tablet) {
   .decor {
     position: relative;
-    padding: 6em 0 6em;
-    text-align: center;
+    padding: 4em 0 4em;
     z-index: 1;
+
+    .content {
+      @include container(96%);
+    }
 
     //&::before,
     //&::after {
@@ -55,5 +67,26 @@
     //  background: $blue-lighter;
     //}
 
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .decor {
+    padding: 6em 0 6em;
+
+    .content {
+      @include container(92%);
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .decor {
+
+    .content {
+      @include container(90%);
+    }
   }
 }

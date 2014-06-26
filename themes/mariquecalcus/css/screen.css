@@ -76,32 +76,93 @@ img {
  * Layout elements.
  */
 /* line 6, ../sass/partials/layout/_section.scss */
+.decor {
+  text-align: center;
+  padding: 2em 0 2em;
+}
+/* line 10, ../sass/partials/layout/_section.scss */
+.decor .content {
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+.decor .content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 15, ../sass/partials/layout/_section.scss */
 .white {
   background: white;
   color: #6fb7e9;
 }
-/* line 9, ../sass/partials/layout/_section.scss */
+/* line 18, ../sass/partials/layout/_section.scss */
 .white::before {
   background: #e9f2f9;
 }
 
-/* line 14, ../sass/partials/layout/_section.scss */
+/* line 23, ../sass/partials/layout/_section.scss */
 .blue {
   background: #b2d1e5;
   color: white;
 }
-/* line 17, ../sass/partials/layout/_section.scss */
+/* line 26, ../sass/partials/layout/_section.scss */
 .blue::before {
   background: #e9f2f9;
 }
 
 @media (min-width: 768px) {
-  /* line 24, ../sass/partials/layout/_section.scss */
+  /* line 33, ../sass/partials/layout/_section.scss */
   .decor {
     position: relative;
-    padding: 6em 0 6em;
-    text-align: center;
+    padding: 4em 0 4em;
     z-index: 1;
+  }
+  /* line 38, ../sass/partials/layout/_section.scss */
+  .decor .content {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .decor .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 992px) {
+  /* line 75, ../sass/partials/layout/_section.scss */
+  .decor {
+    padding: 6em 0 6em;
+  }
+  /* line 78, ../sass/partials/layout/_section.scss */
+  .decor .content {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .decor .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 88, ../sass/partials/layout/_section.scss */
+  .decor .content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .decor .content:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }
 /**
@@ -885,7 +946,6 @@ html body {
 html body .container {
   height: 100%;
   overflow: visible;
-  overflow-x: hidden;
 }
 /* line 16, ../sass/partials/component/_splash.scss */
 html body .container #main-wrapper {
