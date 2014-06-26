@@ -4,7 +4,7 @@
  */
 
 /* Mobile First */
-.footer-center {
+#footer-center {
   @include container(96%);
 
   .col1 {
@@ -24,7 +24,7 @@
 
 
 @include breakpoint($bp-tablet) {
-  .footer-center {
+  #footer-center {
     @include container(94%);
 
     .col1 {
@@ -44,14 +44,15 @@
 
 
 @include breakpoint($bp-desktop) {
-  .footer-center {
+  #footer-center {
     @include container(92%);
+    padding: 1em 0 1em 0;
   }
 }
 
 
 @include breakpoint($bp-large) {
-  .footer-center {
+  #footer-center {
     @include container(90%);
   }
 }

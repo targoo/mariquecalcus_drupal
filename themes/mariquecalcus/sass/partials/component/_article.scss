@@ -5,40 +5,200 @@
 
 /* Mobile First */
 .node-article {
+
   header {
+
+    .sharing {
+      @include container(100%);
+      font-size: 0.7em;
+
+      .twitter {
+        @include span (3 of 3);
+        background: #00acee;
+        @include unstyled-link();
+
+        .fa {
+          padding: 10px;
+          margin-right: 5px;
+          background: #00a3e2;
+          font-size: 16px;
+        }
+      }
+
+      .facebook {
+        @include span (3 of 3);
+        background: #3b5998;
+        @include unstyled-link();
+
+        .fa {
+          padding: 10px 13px;
+          margin-right: 8px;
+          background: #36538e;
+          font-size: 16px;
+        }
+      }
+
+      .gplus {
+        @include span (3 of 3);
+        background: #dd4b39;
+        @include unstyled-link();
+
+        .fa {
+          padding: 10px;
+          margin-right: 9px;
+          background: #cb4433;
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    .meta {
+      @include container(100%);
+      padding-top: 1em;
+      font-size: 0.7em;
+
+      .created {
+        @include span (3 of 3);
+        color: $white;
+        background: $grey-light;
+
+        .fa {
+          padding: 10px;
+          margin-right: 5px;
+          background: $grey;
+          font-size: 16px;
+        }
+      }
+
+      .updated {
+        @include span (3 of 3);
+        color: $white;
+        background: $grey;
+
+        .fa {
+          padding: 10px;
+          margin-right: 5px;
+          background: $grey-dark;
+          font-size: 16px;
+        }
+      }
+
+      .author {
+        @include span (3 of 3);
+        color: $white;
+        background: $grey-dark;
+
+        .fa {
+          padding: 10px 11px 10px 11px;
+          margin-right: 5px;
+          background: $grey-darker;
+          font-size: 16px;
+        }
+      }
+    }
   }
+
   .content {
 
     .field-name-field-image {
       width: 100%;
     }
   }
+
   footer {
   }
 }
 
 
 @include breakpoint($bp-tablet) {
+  .node-article {
+
+    header {
+
+      .sharing {
+        @include container(100%);
+
+        .twitter {
+          @include span (1 of 3);
+        }
+
+        .facebook {
+          @include span (1 at 2 of 3);
+        }
+
+        .gplus {
+          @include span (1 at 3 of 3);
+        }
+      }
+
+      .meta {
+        @include container(100%);
+
+        .created {
+          @include span (1 of 3);
+        }
+
+        .updated {
+          @include span (1 at 2 of 3);
+        }
+
+        .author {
+          @include span (1 at 3 of 3);
+        }
+      }
+    }
+  }
 }
 
 
 @include breakpoint($bp-desktop) {
   .node-article {
+
     header {
       float: left;
-      witdh: 24%;
+      width: 26%;
+
+      .meta {
+        font-size: 0.6em;
+        .created {
+          @include span (3 of 3);
+        }
+        .updated {
+          @include span (3 of 3);
+        }
+        .author {
+          @include span (3 of 3);
+        }
+      }
+
+      .sharing {
+        font-size: 0.6em;
+        .twitter {
+          @include span (3 of 3);
+        }
+        .facebook {
+          @include span (3 of 3);
+        }
+        .gplus {
+          @include span (3 of 3);
+        }
+      }
+
     }
+
     .content {
       float: right;
-      width: 74%;
+      width: 73%;
 
       .field-name-field-image {
-        width: 75%;
-        margin-left: -35%;
+        width: 80%;
+        margin-left: -27%;
         float: left;
-        margin-right: 3%;
+        margin-right: 2%;
       }
     }
+
     footer {
     }
   }
