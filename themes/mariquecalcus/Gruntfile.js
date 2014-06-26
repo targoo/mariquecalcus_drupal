@@ -162,6 +162,20 @@ module.exports = function(grunt) {
         src: 'technology/*.svg',
         dest: 'images/',
         filter: 'isFile'
+      },
+      process: {
+        expand: true,
+        cwd: 'images_sources/',
+        src: 'process/*.svg',
+        dest: 'images/',
+        filter: 'isFile'
+      },
+      splash: {
+        expand: true,
+        cwd: 'images_sources/',
+        src: 'splash/*.svg',
+        dest: 'images/',
+        filter: 'isFile'
       }
     },
 
@@ -202,7 +216,14 @@ module.exports = function(grunt) {
 
   // Tell Grunt what to do when we type "grunt" into the terminal.
   //grunt.registerTask('default', ['concat', 'uglify:dist', 'imagemin', 'compass']);
-  grunt.registerTask('default', ['grunticon:technology', 'grunticon:logos', 'copy:technology', 'copy:logos']);
+  grunt.registerTask('default', [
+    'grunticon:technology',
+    'grunticon:logos',
+    'copy:technology',
+    'copy:process',
+    'copy:logos',
+    'copy:splash',
+  ]);
 
   // Tell Grunt what to do when we type "grunt dev" into the terminal.
   //grunt.registerTask('dev', ['concat', 'uglify:dev', 'imagemin', 'compass']);

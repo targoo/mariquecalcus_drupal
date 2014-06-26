@@ -954,7 +954,7 @@ html body .container #main-wrapper {
 /* line 18, ../sass/partials/component/_splash.scss */
 html body .container #main-wrapper .intro {
   height: 100%;
-  background: transparent url("/themes/mariquecalcus/images_sources/splash/splash.svg") center center no-repeat;
+  background: transparent url("/themes/mariquecalcus/images/splash/splash.svg") center center no-repeat;
   position: relative;
   z-index: 1;
   padding: 0;
