@@ -7,17 +7,19 @@
 #logo {
   @include transition(all .1s ease-out);
   display: block;
-  background: url(../images/logos/logo_medium.png) no-repeat center center;
-  width: 240px;
-  height: 50px;
-  background-size: 240px 50px;
-  padding: 0 0 0 10px;
+  @include image-replace('../images/logos/logo_simple.png', block);
+  margin: 20px 0 0px 20px;
 }
 
 
 @include breakpoint($bp-tablet) {
   #logo {
     float: left;
+    background: url(../images/logos/logo_medium.png) no-repeat center center;
+    width: 240px;
+    height: 50px;
+    background-size: 240px 50px;
+    margin: 0;
   }
 }
 

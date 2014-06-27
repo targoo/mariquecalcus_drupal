@@ -4,7 +4,9 @@
  */
 
 /* Mobile First */
-@include breakpoint($bp-desktop) {
+
+
+@include breakpoint($bp-tablet) {
   #header.scrolling {
     background-color: $white;
     height: 50px;
@@ -19,6 +21,5 @@
       background-size: 240px 50px;
       padding: 0 0 0 50px;
     }
-
   }
 }

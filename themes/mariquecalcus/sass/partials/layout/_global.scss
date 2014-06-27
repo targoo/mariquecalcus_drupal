@@ -4,7 +4,7 @@
  */
 
 
-@include breakpoint($bp-desktop) {
+@include breakpoint($bp-tablet) {
   body {
     #header {
       height: 100px;

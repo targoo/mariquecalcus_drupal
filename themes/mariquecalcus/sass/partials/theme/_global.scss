@@ -21,7 +21,7 @@ body {
 }
 
 
-@include breakpoint($bp-desktop) {
+@include breakpoint($bp-tablet) {
   body {
     #header {
       //background-color: $white;
