@@ -1,0 +1,7 @@
+simple.form:
+  path: '/mc_demo/html5baseform'
+  defaults:
+    _form: '\Drupal\mc_demo\Form\HTML5FormBase'
+    _title: 'Base HTML5 Form'
+  requirements:
+    _permission: 'access content'

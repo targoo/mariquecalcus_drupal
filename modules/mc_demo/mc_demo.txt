@@ -1,0 +1,33 @@
+The form api in Drupal 8 is still awesome and very rich.
+
+
+//use Drupal\Core\Form\FormBuilderInterface;
+
+//or you can extends the baseform
+
+//\Drupal::formBuilder()->getForm('Drupal\mc_form\Form\myform');
+
+//In Drupal 8, form definition functions are all grouped together inside a class which can extends the baseform to make ruse
+// the
+// Drupal 8 will support a number of the new HTML5 input element types and we will review them.
+
+// If you have build form with the Drupal 7 or even 6 Api it should be easy as the api didn't change that much.
+
+
+https://www.drupal.org/node/2117411
+https://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/8
+http://www.iwanttouse.com/#datalist
+http://diveintohtml5.info/forms.html
+
+Properties always start with a #. Anything that doesn't is treated as an element.
+Elements and #properties are the basis of all forms.
+
+You can already start using them today. Indeed if they are not supported, they will behave as regular text fields.
+
+There is a more compelling reason to start to use today. Soft keyboard that are render in module devices will be opimize for the
+current input text providing a  better usability experiance.
+
+You also get build in validation rule.
+
+Drupal does support almost all the new HTML5 input text and if it does they may be some work around.
+

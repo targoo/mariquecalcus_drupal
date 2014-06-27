@@ -1,0 +1,6 @@
+name: MC Demo
+type: module
+description: 'MariqueCalcus Demo'
+package: MariqueCalcus
+version: VERSION
+core: 8.x
