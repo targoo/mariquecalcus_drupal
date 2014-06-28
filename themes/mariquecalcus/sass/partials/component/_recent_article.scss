@@ -50,6 +50,10 @@
 @include breakpoint($bp-tablet) {
   .recent-article {
     margin: 1em 0;
+
+    .title {
+      min-height: 3em;
+    }
   }
 }
 

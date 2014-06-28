@@ -31,3 +31,4 @@ You also get build in validation rule.
 
 Drupal does support almost all the new HTML5 input text and if it does they may be some work around.
 
+

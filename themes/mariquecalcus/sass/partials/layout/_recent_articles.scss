@@ -1,66 +1,78 @@
 /**
  * @file
- * Recent article.
+ * Recent articles.
  */
+
+$susy-special: (
+  gutters: 1,
+);
+
 
 /* Mobile First */
 #block-views-block-content-recent-articles {
   .view-content {
     @include container(96%);
     .col1 {
-      @include span (12 of 12);
+      @include span (12);
     }
     .col2 {
-      @include span (12 of 12);
+      @include span (12);
     }
     .col3 {
-      @include span (12 of 12);
+      @include span (12);
+      display: none;
     }
   }
 }
 
 
-@include breakpoint($bp-tablet) {
-  #block-views-block-content-recent-articles {
-    .view-content {
-      @include container(94%);
-      .col1 {
-        @include span (6 of 12);
-      }
-      .col2 {
-        @include span (6  at 7 of 12);
-      }
-      .col3 {
-        display: none;
-      }
-    }
-  }
-}
-
-
-@include breakpoint($bp-desktop) {
-  #block-views-block-content-recent-articles {
-    .view-content {
-      @include container(92%);
-      .col1 {
-        @include span (4 of 12);
-      }
-      .col2 {
-        @include span (4  at 5 of 12);
-      }
-      .col3 {
-        @include span (4  at 9 of 12);
-        display: block;
+@include with-layout($susy-special) {
+  @include breakpoint($bp-tablet) {
+    #block-views-block-content-recent-articles {
+      .view-content {
+        @include container(94%);
+        .col1 {
+          @include span (6);
+        }
+        .col2 {
+          @include span (6  at 7);
+        }
+        .col3 {
+          display: none;
+        }
       }
     }
   }
 }
 
 
-@include breakpoint($bp-large) {
-  #block-views-block-content-recent-articles {
-    .view-content {
-      @include container(90%);
+@include with-layout($susy-special) {
+  @include breakpoint($bp-desktop) {
+    #block-views-block-content-recent-articles {
+      .view-content {
+        @include container(92%);
+        .col1 {
+          @include span (4);
+        }
+        .col2 {
+          @include span (4  at 5);
+        }
+        .col3 {
+          @include span (4  at 9);
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+@include with-layout($susy-special) {
+  @include breakpoint($bp-large) {
+    #block-views-block-content-recent-articles {
+      .view-content {
+        @include container(90%);
+      }
     }
   }
 }

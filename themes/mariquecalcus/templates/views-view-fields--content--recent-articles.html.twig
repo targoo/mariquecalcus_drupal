@@ -31,7 +31,7 @@
  */
 #}
 
-<!--ol
+<!--ol>
   {% for key, value in fields  %}
     <li>{{ key }}</li>
   {% endfor %}
@@ -42,10 +42,10 @@
   <h4 class="title">{{ fields['title'].content }}</h4>
 
   <span class="created">
-    {{ fields['created_1'].content|date('d/m/Y') }}
+    {{ fields['created'].content|date('d/m/Y') }}
   </span>
 
-  <span class="updated">
+  <span class="updated" style="display: none">
     {{ fields['changed'].content|date('d/m/Y') }}
   </span>
 

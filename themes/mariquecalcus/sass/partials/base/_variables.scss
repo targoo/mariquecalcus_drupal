@@ -23,3 +23,11 @@ $blue-dark: #3C8DC5;
 $blue-darker: #241F55; // rgb(36, 31, 85)
 
 $green: #0DB14B;
+
+$susy: (
+  columns: 12,
+  gutters: 0,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
