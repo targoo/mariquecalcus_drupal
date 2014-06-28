@@ -503,7 +503,7 @@ img {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 75%;
+    width: 66.66667%;
     float: left;
   }
   /* line 46, ../sass/partials/layout/_main.scss */
@@ -511,7 +511,7 @@ img {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 25%;
+    width: 33.33333%;
     float: right;
   }
 }
@@ -527,6 +527,22 @@ img {
     content: " ";
     display: block;
     clear: both;
+  }
+  /* line 60, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper #page-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+  }
+  /* line 64, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper #aside_right {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
   }
 }
 /**
@@ -1303,15 +1319,11 @@ html body .container #main-wrapper .intro .content {
 .node-article .content .field-name-field-image {
   width: 100%;
 }
-/* line 108, ../sass/partials/component/_article.scss */
-.node-article .content .field-name-field-references {
-  background-color: #e9f2f9;
-}
-/* line 119, ../sass/partials/component/_article.scss */
+/* line 114, ../sass/partials/component/_article.scss */
 .node-article .content span.code {
   background-color: #aaaaaa;
 }
-/* line 123, ../sass/partials/component/_article.scss */
+/* line 118, ../sass/partials/component/_article.scss */
 .node-article .content a {
   color: inherit;
   text-decoration: inherit;
@@ -1322,13 +1334,13 @@ html body .container #main-wrapper .intro .content {
 .node-article .content a:active, .node-article .content a:focus {
   outline: none;
 }
-/* line 127, ../sass/partials/component/_article.scss */
+/* line 122, ../sass/partials/component/_article.scss */
 .node-article .content a:hover {
   color: #6fb7e9;
 }
 
 @media (min-width: 768px) {
-  /* line 143, ../sass/partials/component/_article.scss */
+  /* line 138, ../sass/partials/component/_article.scss */
   .node-article header .sharing {
     max-width: 100%;
     margin-left: auto;
@@ -1340,7 +1352,7 @@ html body .container #main-wrapper .intro .content {
     display: block;
     clear: both;
   }
-  /* line 146, ../sass/partials/component/_article.scss */
+  /* line 141, ../sass/partials/component/_article.scss */
   .node-article header .sharing .twitter {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1348,7 +1360,7 @@ html body .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 150, ../sass/partials/component/_article.scss */
+  /* line 145, ../sass/partials/component/_article.scss */
   .node-article header .sharing .facebook {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1356,7 +1368,7 @@ html body .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 154, ../sass/partials/component/_article.scss */
+  /* line 149, ../sass/partials/component/_article.scss */
   .node-article header .sharing .gplus {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1364,7 +1376,7 @@ html body .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: right;
   }
-  /* line 159, ../sass/partials/component/_article.scss */
+  /* line 154, ../sass/partials/component/_article.scss */
   .node-article header .meta {
     max-width: 100%;
     margin-left: auto;
@@ -1376,7 +1388,7 @@ html body .container #main-wrapper .intro .content {
     display: block;
     clear: both;
   }
-  /* line 162, ../sass/partials/component/_article.scss */
+  /* line 157, ../sass/partials/component/_article.scss */
   .node-article header .meta .created {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1384,7 +1396,7 @@ html body .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 166, ../sass/partials/component/_article.scss */
+  /* line 161, ../sass/partials/component/_article.scss */
   .node-article header .meta .updated {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1392,7 +1404,7 @@ html body .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 170, ../sass/partials/component/_article.scss */
+  /* line 165, ../sass/partials/component/_article.scss */
   .node-article header .meta .author {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1402,16 +1414,16 @@ html body .container #main-wrapper .intro .content {
   }
 }
 @media (min-width: 992px) {
-  /* line 182, ../sass/partials/component/_article.scss */
+  /* line 177, ../sass/partials/component/_article.scss */
   .node-article header {
     float: left;
     width: 26%;
   }
-  /* line 186, ../sass/partials/component/_article.scss */
+  /* line 181, ../sass/partials/component/_article.scss */
   .node-article header .meta {
     font-size: 0.6em;
   }
-  /* line 188, ../sass/partials/component/_article.scss */
+  /* line 183, ../sass/partials/component/_article.scss */
   .node-article header .meta .created {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1419,7 +1431,7 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 191, ../sass/partials/component/_article.scss */
+  /* line 186, ../sass/partials/component/_article.scss */
   .node-article header .meta .updated {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1427,7 +1439,7 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 194, ../sass/partials/component/_article.scss */
+  /* line 189, ../sass/partials/component/_article.scss */
   .node-article header .meta .author {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1435,11 +1447,11 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 199, ../sass/partials/component/_article.scss */
+  /* line 194, ../sass/partials/component/_article.scss */
   .node-article header .sharing {
     font-size: 0.6em;
   }
-  /* line 201, ../sass/partials/component/_article.scss */
+  /* line 196, ../sass/partials/component/_article.scss */
   .node-article header .sharing .twitter {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1447,7 +1459,7 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 204, ../sass/partials/component/_article.scss */
+  /* line 199, ../sass/partials/component/_article.scss */
   .node-article header .sharing .facebook {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1455,7 +1467,7 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 207, ../sass/partials/component/_article.scss */
+  /* line 202, ../sass/partials/component/_article.scss */
   .node-article header .sharing .gplus {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1463,15 +1475,15 @@ html body .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 214, ../sass/partials/component/_article.scss */
+  /* line 209, ../sass/partials/component/_article.scss */
   .node-article .content {
     float: right;
     width: 73%;
   }
-  /* line 218, ../sass/partials/component/_article.scss */
+  /* line 213, ../sass/partials/component/_article.scss */
   .node-article .content .field-name-field-image {
     width: 80%;
-    margin-left: -37%;
+    margin-left: -35%;
     float: left;
     margin-right: 2%;
   }
@@ -1511,6 +1523,11 @@ html body .container #main-wrapper .intro .content {
     display: none !important;
   }
 }
+/* line 3, ../sass/partials/component/_adsbygoogle.scss */
+.adsbygoogle {
+  background-color: #b2d1e5;
+}
+
 /**
  * @file
  * State.
