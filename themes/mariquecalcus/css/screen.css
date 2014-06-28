@@ -792,6 +792,35 @@ img {
 }
 /**
  * @file
+ * Navigation.
+ */
+/* Mobile First */
+/* line 9, ../sass/partials/layout/_taxonomoy.scss */
+.page-taxonomy .node-article {
+  clear: both;
+  padding: 1em 0 1em 0;
+}
+
+@media (min-width: 768px) {
+  /* line 18, ../sass/partials/layout/_taxonomoy.scss */
+  .page-taxonomy .node-article {
+    padding: 2em 0 2em 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 28, ../sass/partials/layout/_taxonomoy.scss */
+  .page-taxonomy .node-article {
+    padding: 3em 0 3em 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 38, ../sass/partials/layout/_taxonomoy.scss */
+  .page-taxonomy .node-article {
+    padding: 4em 0 4em 0;
+  }
+}
+/**
+ * @file
  * Component (Module) elements.
  */
 /**
@@ -1486,6 +1515,26 @@ html body .container #main-wrapper .intro .content {
     margin-left: -35%;
     float: left;
     margin-right: 2%;
+  }
+  /* line 220, ../sass/partials/component/_article.scss */
+  .node-article .content .field-name-field-references {
+    background-color: #e9f2f9;
+    margin-top: 1em;
+    padding: 1em;
+  }
+  /* line 230, ../sass/partials/component/_article.scss */
+  .node-article .content .field-name-field-tags {
+    margin-top: 10px;
+    border-top: 5px #b2d1e5 solid;
+    border-bottom: 5px #b2d1e5 solid;
+  }
+  /* line 235, ../sass/partials/component/_article.scss */
+  .node-article .content .field-name-field-tags .field-items {
+    display: inline-flex;
+  }
+  /* line 238, ../sass/partials/component/_article.scss */
+  .node-article .content .field-name-field-tags .field-items .field-item {
+    padding-right: 1em;
   }
 }
 /**

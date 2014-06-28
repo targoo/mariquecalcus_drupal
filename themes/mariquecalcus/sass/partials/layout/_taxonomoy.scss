@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Navigation.
+ */
+
+/* Mobile First */
+.page-taxonomy {
+
+  .node-article {
+    clear: both;
+    padding: 1em 0 1em 0;
+  }
+}
+
+@include breakpoint($bp-tablet) {
+  .page-taxonomy {
+
+    .node-article {
+      padding: 2em 0 2em 0;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .page-taxonomy {
+
+    .node-article {
+      padding: 3em 0 3em 0;
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .page-taxonomy {
+
+    .node-article {
+      padding: 4em 0 4em 0;
+    }
+  }
+}

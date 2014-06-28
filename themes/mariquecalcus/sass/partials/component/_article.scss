@@ -216,6 +216,30 @@
         float: left;
         margin-right: 2%;
       }
+
+      .field-name-field-references {
+        background-color: $blue-lighter;
+        margin-top: 1em;
+        padding: 1em;
+
+        .field-item {
+
+        }
+      }
+
+      .field-name-field-tags {
+        margin-top: 10px;
+        border-top: 5px $blue-light solid;
+        border-bottom: 5px $blue-light solid;
+
+        .field-items {
+          display: inline-flex;
+
+          .field-item {
+            padding-right: 1em;
+          }
+        }
+      }
     }
 
     footer {
