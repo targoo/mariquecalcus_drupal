@@ -1,0 +1,59 @@
+/**
+ * @file
+ * Contact Form.
+ */
+
+/* Mobile First */
+.feedback-contact-message-form {
+
+  padding: 1em 0;
+
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $grey-light;
+    font-size: 1em;
+    color: $blue;
+    background: $white;
+    @include border-radius(3px);
+  }
+
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $grey-light;
+    font-size: 1em;
+    color: $blue;
+    background: $white;
+    @include border-radius(3px);
+  }
+
+  .form-actions {
+    padding-top: 30px;
+  }
+
+  #edit-preview {
+    display: none;
+  }
+
+  #edit-submit {
+    @include buttonize($blue);
+    font-size: 1em;
+    cursor: pointer;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .feedback-contact-message-form {
+    padding: 3em 0;
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

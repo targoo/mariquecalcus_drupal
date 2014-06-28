@@ -1512,7 +1512,7 @@ html body .container #main-wrapper .intro .content {
   /* line 213, ../sass/partials/component/_article.scss */
   .node-article .content .field-name-field-image {
     width: 80%;
-    margin-left: -35%;
+    margin-left: -37%;
     float: left;
     margin-right: 2%;
   }
@@ -1577,6 +1577,108 @@ html body .container #main-wrapper .intro .content {
   background-color: #b2d1e5;
 }
 
+/**
+ * @file
+ * Contact Form.
+ */
+/* Mobile First */
+/* line 7, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form {
+  padding: 1em 0;
+}
+/* line 11, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form input[type="text"], .feedback-contact-message-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #aaaaaa;
+  font-size: 1em;
+  color: #6fb7e9;
+  background: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 21, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #aaaaaa;
+  font-size: 1em;
+  color: #6fb7e9;
+  background: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 31, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form .form-actions {
+  padding-top: 30px;
+}
+/* line 35, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form #edit-preview {
+  display: none;
+}
+/* line 39, ../sass/partials/component/_contact_form.scss */
+.feedback-contact-message-form #edit-submit {
+  -moz-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  background-image: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  background-color: #6fb7e9;
+  background-image: url("../images/arrows/arrow-right-white.png");
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  background-size: 8px 11px;
+  border: 0px;
+  padding: 15px 40px 15px 15px;
+  font-weight: bold;
+  letter-spacing: .05em;
+  text-rendering: optimizeLegibility;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+.feedback-contact-message-form #edit-submit:active, .feedback-contact-message-form #edit-submit:focus {
+  outline: none;
+}
+/* line 95, ../sass/partials/base/_mixins.scss */
+.feedback-contact-message-form #edit-submit:hover, .feedback-contact-message-form #edit-submit:active, .feedback-contact-message-form #edit-submit:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+  /* line 39, ../sass/partials/component/_contact_form.scss */
+  .feedback-contact-message-form #edit-submit {
+    background-image: url("../images/arrows/arrow-right-white@2x.png");
+  }
+}
+/* line 104, ../sass/partials/base/_mixins.scss */
+.feedback-contact-message-form #edit-submit:hover {
+  background-color: #2d96df;
+}
+
+@media (min-width: 768px) {
+  /* line 48, ../sass/partials/component/_contact_form.scss */
+  .feedback-contact-message-form {
+    padding: 3em 0;
+  }
+}
 /**
  * @file
  * State.
