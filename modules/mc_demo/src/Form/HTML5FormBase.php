@@ -28,12 +28,28 @@ class HTML5FormBase extends FormBase {
 
     // novalidate
 
-    // PLACEHOLDER TEXT
+    $form['email'] = array(
+      '#type' => 'email',
+      '#title' => $this->t('Email:'),
+      '#attributes' => array(
+        'placeholder' => 'calcus.david@gmail.com',
+        'autofocus' => TRUE,
+      ),
+    );
 
+    $form['url'] = array(
+      '#type' => 'url',
+      '#title' => $this->t('Url:'),
+      '#attributes' => array(
+        'placeholder' => 'http://www.mariquecalcus.com',
+      ),
+    );
 
-    // autofocus
+    $form['tel'] = array(
+      '#type' => 'tel',
+      '#title' => $this->t('Tel:'),
+    );
 
-    // Supported.
     $form['color'] = array(
       '#type' => 'color',
       '#title' => $this->t('Color:'),
@@ -115,27 +131,6 @@ class HTML5FormBase extends FormBase {
     $form['search'] = array(
       '#type' => 'search',
       '#title' => $this->t('Search:'),
-    );
-
-    $form['tel'] = array(
-      '#type' => 'tel',
-      '#title' => $this->t('Tel:'),
-      '#attributes' => array(
-        'autofocus' => 'autofocus',
-      ),
-    );
-
-    $form['email'] = array(
-      '#type' => 'email',
-      '#title' => $this->t('Email:'),
-      '#attributes' => array(
-        'placeholder' => 'calcus.david@gmail.com',
-      ),
-    );
-
-    $form['url'] = array(
-      '#type' => 'url',
-      '#title' => $this->t('Url:'),
     );
 
     $form['show'] = array(

@@ -5,16 +5,9 @@
 
 /* Mobile First */
 html {
-  /* all the tags up to .fullscreen-cont must have this style */
-  //height:100%;
   body.front {
-    //height:100%;
     .container {
-      //height:100%;
-      //overflow: visible;
-      //overflow-x: hidden;
       #main-wrapper {
-        //height:100%;
         .intro {
           height:100%;
           background:transparent url('/themes/mariquecalcus/images/splash/splash.svg') center center no-repeat;
@@ -28,7 +21,7 @@ html {
           background-size: cover;
 
           h1 {
-
+            font-size: 1.4em;
           }
 
           .content {
@@ -39,7 +32,7 @@ html {
             z-index:1;
             top: 0;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
           }
         }
       }
@@ -62,15 +55,15 @@ html {
           .intro {
 
             h1 {
-
+              font-size: 2em;
             }
 
             .content {
               top: 150px;
+              font-size: 1.4em;
             }
           }
         }
-
       }
     }
   }

@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Contact Form.
+ */
+
+/* Mobile First */
+.my-unique-id {
+
+  padding: 1em 0;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="time"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"] {
+    width: 94%;
+    padding: 15px;
+    border: 1px solid $grey-light;
+    font-size: 1em;
+    color: $blue;
+    background: $white;
+    @include border-radius(3px);
+  }
+
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $grey-light;
+    font-size: 1em;
+    color: $blue;
+    background: $white;
+    @include border-radius(3px);
+  }
+
+  .form-actions {
+    padding-top: 30px;
+  }
+
+  #edit-preview {
+    display: none;
+  }
+
+  #edit-show {
+    @include buttonize($blue);
+    font-size: 1em;
+    cursor: pointer;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .my-unique-id {
+    padding: 3em 0;
+
+    .form-item {
+      clear: both;
+      padding: 10px 0;
+
+      label {
+        width: 20%;
+        float: left;
+        font-size: 1.5em;
+      }
+
+      input {
+        width: 70%;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}
