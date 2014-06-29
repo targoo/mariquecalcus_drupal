@@ -5,14 +5,18 @@
 
 /* Mobile First */
 #main {
+  background-color: red!important;
   padding-top: 200px;
   #content-wrapper {
+    background-color: blue!important;
     @include container(96%);
     #page-content {
+      background-color: green!important;
       @include span (12 of 12);
     }
 
     #aside_right {
+      background-color: yellow!important;
       @include span (12 of 12);
     }
   }

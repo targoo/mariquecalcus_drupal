@@ -436,10 +436,12 @@ img {
 /* Mobile First */
 /* line 7, ../sass/partials/layout/_main.scss */
 #main {
+  background-color: red !important;
   padding-top: 200px;
 }
-/* line 9, ../sass/partials/layout/_main.scss */
+/* line 10, ../sass/partials/layout/_main.scss */
 #main #content-wrapper {
+  background-color: blue !important;
   max-width: 96%;
   margin-left: auto;
   margin-right: auto;
@@ -450,16 +452,18 @@ img {
   display: block;
   clear: both;
 }
-/* line 11, ../sass/partials/layout/_main.scss */
+/* line 13, ../sass/partials/layout/_main.scss */
 #main #content-wrapper #page-content {
+  background-color: green !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
 }
-/* line 15, ../sass/partials/layout/_main.scss */
+/* line 18, ../sass/partials/layout/_main.scss */
 #main #content-wrapper #aside_right {
+  background-color: yellow !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -468,7 +472,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* line 25, ../sass/partials/layout/_main.scss */
+  /* line 29, ../sass/partials/layout/_main.scss */
   #main #content-wrapper {
     max-width: 94%;
     margin-left: auto;
@@ -480,13 +484,13 @@ img {
     display: block;
     clear: both;
   }
-  /* line 28, ../sass/partials/layout/_main.scss */
+  /* line 32, ../sass/partials/layout/_main.scss */
   #main #content-wrapper #aside_right {
     display: block;
   }
 }
 @media (min-width: 992px) {
-  /* line 39, ../sass/partials/layout/_main.scss */
+  /* line 43, ../sass/partials/layout/_main.scss */
   #main #content-wrapper {
     max-width: 92%;
     margin-left: auto;
@@ -498,7 +502,7 @@ img {
     display: block;
     clear: both;
   }
-  /* line 42, ../sass/partials/layout/_main.scss */
+  /* line 46, ../sass/partials/layout/_main.scss */
   #main #content-wrapper #page-content {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -506,7 +510,7 @@ img {
     width: 66.66667%;
     float: left;
   }
-  /* line 46, ../sass/partials/layout/_main.scss */
+  /* line 50, ../sass/partials/layout/_main.scss */
   #main #content-wrapper #aside_right {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -516,7 +520,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  /* line 57, ../sass/partials/layout/_main.scss */
+  /* line 61, ../sass/partials/layout/_main.scss */
   #main #content-wrapper {
     max-width: 90%;
     margin-left: auto;
@@ -528,7 +532,7 @@ img {
     display: block;
     clear: both;
   }
-  /* line 60, ../sass/partials/layout/_main.scss */
+  /* line 64, ../sass/partials/layout/_main.scss */
   #main #content-wrapper #page-content {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -536,7 +540,7 @@ img {
     width: 75%;
     float: left;
   }
-  /* line 64, ../sass/partials/layout/_main.scss */
+  /* line 68, ../sass/partials/layout/_main.scss */
   #main #content-wrapper #aside_right {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1065,20 +1069,20 @@ html {
   height: 100%;
 }
 /* line 10, ../sass/partials/component/_splash.scss */
-html body {
+html body.front {
   height: 100%;
 }
 /* line 12, ../sass/partials/component/_splash.scss */
-html body .container {
+html body.front .container {
   height: 100%;
   overflow: visible;
 }
 /* line 16, ../sass/partials/component/_splash.scss */
-html body .container #main-wrapper {
+html body.front .container #main-wrapper {
   height: 100%;
 }
 /* line 18, ../sass/partials/component/_splash.scss */
-html body .container #main-wrapper .intro {
+html body.front .container #main-wrapper .intro {
   height: 100%;
   background: transparent url("/themes/mariquecalcus/images/splash/splash.svg") center center no-repeat;
   position: relative;
@@ -1091,7 +1095,7 @@ html body .container #main-wrapper .intro {
   background-size: cover;
 }
 /* line 34, ../sass/partials/component/_splash.scss */
-html body .container #main-wrapper .intro .content {
+html body.front .container #main-wrapper .intro .content {
   width: 100%;
   overflow: hidden;
   display: block;
