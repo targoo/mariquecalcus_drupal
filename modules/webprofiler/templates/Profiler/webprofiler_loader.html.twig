@@ -1,0 +1,72 @@
+<div id="webprofiler{{ token }}" class="sf-toolbar" style="display: none"></div>
+
+<script>
+    Sfjs = (function () {
+        "use strict";
+
+        var profilerStorageKey = 'webprofiler/profiler/',
+
+                getPreference = function (name) {
+                    if (!window.localStorage) {
+                        return null;
+                    }
+
+                    return localStorage.getItem(profilerStorageKey + name);
+                },
+
+                setPreference = function (name, value) {
+                    if (!window.localStorage) {
+                        return null;
+                    }
+
+                    localStorage.setItem(profilerStorageKey + name, value);
+                    return true;
+                };
+
+        return {
+            getPreference: getPreference,
+            setPreference: setPreference
+        }
+    })();
+
+    function Loader() {
+        "use strict";
+
+        var instance = {};
+
+        instance.load = function () {
+            instance.loadXMLDoc('{{ profiler_url }}', function (result) {
+                document.getElementById('webprofiler{{ token }}').innerHTML = result;
+                document.getElementById('webprofiler{{ token }}').style.display = 'block';
+
+                if (Sfjs.getPreference('toolbar/displayState') == 'none') {
+                    document.getElementById('sfToolbarMainContent-{{ token }}').style.display = 'none';
+                    document.getElementById('sfToolbarClearer-{{ token }}').style.display = 'none';
+                    document.getElementById('sfMiniToolbar-{{ token }}').style.display = 'block';
+                } else {
+                    document.getElementById('sfToolbarMainContent-{{ token }}').style.display = 'block';
+                    document.getElementById('sfToolbarClearer-{{ token }}').style.display = 'block';
+                    document.getElementById('sfMiniToolbar-{{ token }}').style.display = 'none';
+                }
+            });
+        };
+
+        instance.loadXMLDoc = function (url, callback) {
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    callback(xmlhttp.responseText);
+                }
+            };
+
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        };
+
+        return instance;
+    }
+
+    var loader = Loader();
+    loader.load();
+</script>
