@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the mariquecalcus theme.
+ */
+
+use Drupal\Core\Template\RenderWrapper;
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function mariquecalcus_preprocess_html(&$variables) {
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function mariquecalcus_preprocess_page(&$variables) {
+  print_r($variables);
+}
