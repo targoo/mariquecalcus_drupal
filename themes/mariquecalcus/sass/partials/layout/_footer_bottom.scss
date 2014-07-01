@@ -6,12 +6,28 @@
 /* Mobile First */
 #footer-bottom {
   @include container(96%);
+
+  .copyright {
+    @include span (12);
+  }
+
+  .social {
+    @include span (12);
+  }
 }
 
 
 @include breakpoint($bp-tablet) {
   #footer-bottom {
     @include container(94%);
+
+    .copyright {
+      @include span (8);
+    }
+
+    .social {
+      @include span (4 at 9);
+    }
   }
 }
 

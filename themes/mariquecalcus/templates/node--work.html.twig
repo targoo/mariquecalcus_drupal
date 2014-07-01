@@ -80,7 +80,7 @@
 
 <article id="node-{{ node.id }}" class="{{ attributes.class}} clearfix"{{ attributes }} role="article">
 
-  <aside>
+  <aside class="aside">
     {{ content.field_highlight }}
   </aside>
 
@@ -90,6 +90,11 @@
 
   <div class="content clearfix"{{ content_attributes }}>
     {{ content|without('field_image','field_highlight') }}
+
+    {% if view_mode == 'teaser' %}
+      <a href="{{ node_url }}">Read More</a>
+    {% endif %}
+
   </div>
 
   <footer>

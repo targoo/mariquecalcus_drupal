@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.node-work {
+
+  .aside {
+    float: none;
+    position: absolute;
+    width: 15%;
+    margin-right: 5%;
+  }
+
+  .image {
+    width: 80%;
+    float: right;
+  }
+
+  .content {
+    width: 55%;
+    margin-left: 20%;
+    float: left;
+  }
+
+  .field-name-field-highlight {
+    background-color: $blue-lighter;
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .node-work {
+
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}

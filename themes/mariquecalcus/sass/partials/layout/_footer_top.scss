@@ -6,12 +6,28 @@
 /* Mobile First */
 #footer-top {
   @include container(96%);
+
+  .slogan {
+    @include span (12);
+  }
+
+  .calltoaction {
+    @include span (12);
+  }
 }
 
 
 @include breakpoint($bp-tablet) {
   #footer-top {
     @include container(94%);
+
+    .slogan {
+      @include span (8);
+    }
+
+    .calltoaction {
+      @include span (4 at 9);
+    }
   }
 }
 

@@ -562,9 +562,25 @@ img {
   display: block;
   clear: both;
 }
+/* line 10, ../sass/partials/layout/_footer_top.scss */
+#footer-top .slogan {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+/* line 14, ../sass/partials/layout/_footer_top.scss */
+#footer-top .calltoaction {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
 
 @media (min-width: 768px) {
-  /* line 13, ../sass/partials/layout/_footer_top.scss */
+  /* line 21, ../sass/partials/layout/_footer_top.scss */
   #footer-top {
     max-width: 94%;
     margin-left: auto;
@@ -576,9 +592,25 @@ img {
     display: block;
     clear: both;
   }
+  /* line 24, ../sass/partials/layout/_footer_top.scss */
+  #footer-top .slogan {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 28, ../sass/partials/layout/_footer_top.scss */
+  #footer-top .calltoaction {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+  }
 }
 @media (min-width: 992px) {
-  /* line 20, ../sass/partials/layout/_footer_top.scss */
+  /* line 36, ../sass/partials/layout/_footer_top.scss */
   #footer-top {
     max-width: 92%;
     margin-left: auto;
@@ -592,7 +624,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  /* line 27, ../sass/partials/layout/_footer_top.scss */
+  /* line 43, ../sass/partials/layout/_footer_top.scss */
   #footer-top {
     max-width: 90%;
     margin-left: auto;
@@ -747,9 +779,25 @@ img {
   display: block;
   clear: both;
 }
+/* line 10, ../sass/partials/layout/_footer_bottom.scss */
+#footer-bottom .copyright {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+/* line 14, ../sass/partials/layout/_footer_bottom.scss */
+#footer-bottom .social {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
 
 @media (min-width: 768px) {
-  /* line 13, ../sass/partials/layout/_footer_bottom.scss */
+  /* line 21, ../sass/partials/layout/_footer_bottom.scss */
   #footer-bottom {
     max-width: 94%;
     margin-left: auto;
@@ -761,9 +809,25 @@ img {
     display: block;
     clear: both;
   }
+  /* line 24, ../sass/partials/layout/_footer_bottom.scss */
+  #footer-bottom .copyright {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+  }
+  /* line 28, ../sass/partials/layout/_footer_bottom.scss */
+  #footer-bottom .social {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+  }
 }
 @media (min-width: 992px) {
-  /* line 20, ../sass/partials/layout/_footer_bottom.scss */
+  /* line 36, ../sass/partials/layout/_footer_bottom.scss */
   #footer-bottom {
     max-width: 92%;
     margin-left: auto;
@@ -777,7 +841,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  /* line 27, ../sass/partials/layout/_footer_bottom.scss */
+  /* line 43, ../sass/partials/layout/_footer_bottom.scss */
   #footer-bottom {
     max-width: 90%;
     margin-left: auto;
@@ -1367,15 +1431,15 @@ html body.front .container #main-wrapper .intro .content {
   color: #6fb7e9;
 }
 /* line 137, ../sass/partials/component/_article.scss */
-.node-article .content ul {
+.node-article .content ul.list {
   padding: 0 0 10px;
 }
 /* line 140, ../sass/partials/component/_article.scss */
-.node-article .content ul li {
+.node-article .content ul.list li {
   padding: 0px 0px 0px 10px;
 }
 /* line 143, ../sass/partials/component/_article.scss */
-.node-article .content ul li:before {
+.node-article .content ul.list li:before {
   font-family: FontAwesome;
   content: "\f058";
   font-size: 1em;
@@ -1568,6 +1632,34 @@ html body.front .container #main-wrapper .intro .content {
     padding-right: 1em;
   }
 }
+/**
+ * @file
+ * Article.
+ */
+/* Mobile First */
+/* line 9, ../sass/partials/component/_work.scss */
+.node-work .aside {
+  float: none;
+  position: absolute;
+  width: 15%;
+  margin-right: 5%;
+}
+/* line 16, ../sass/partials/component/_work.scss */
+.node-work .image {
+  width: 80%;
+  float: right;
+}
+/* line 21, ../sass/partials/component/_work.scss */
+.node-work .content {
+  width: 55%;
+  margin-left: 20%;
+  float: left;
+}
+/* line 27, ../sass/partials/component/_work.scss */
+.node-work .field-name-field-highlight {
+  background-color: #e9f2f9;
+}
+
 /**
  * @file
  * Logo.
