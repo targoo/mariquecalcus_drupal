@@ -4,6 +4,7 @@
  */
 
 /* Mobile First */
+.page-blogs,
 .page-taxonomy {
 
   .node-article {
@@ -13,6 +14,7 @@
 }
 
 @include breakpoint($bp-tablet) {
+  .page-blogs,
   .page-taxonomy {
 
     .node-article {
@@ -23,20 +25,22 @@
 
 
 @include breakpoint($bp-desktop) {
+  .page-blogs,
   .page-taxonomy {
 
     .node-article {
-      padding: 3em 0 3em 0;
+      padding: 3em 0 4em 0;
     }
   }
 }
 
 
 @include breakpoint($bp-large) {
+  .page-blogs,
   .page-taxonomy {
 
     .node-article {
-      padding: 4em 0 4em 0;
+      padding: 2em 0 2em 0;
     }
   }
 }

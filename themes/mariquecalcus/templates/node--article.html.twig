@@ -73,7 +73,7 @@
 #}
 
 <!--ol>
-  {% for key, value in _context  %}
+  {% for key, value in 1  %}
     <li>{{ key }}</li>
   {% endfor %}
 </ol-->
@@ -110,11 +110,20 @@
   </header>
 
   <div class="content clearfix"{{ content_attributes }}>
+
+    {% if view_mode == 'teaser' %}
+      <h2><a href="{{ node_url }}">{{ label }}</a></h2>
+    {% endif %}
+
     {{ content|without('links') }}
+
+    {% if view_mode == 'teaser' %}
+      <a href="{{ node_url }}">Read More</a>
+    {% endif %}
+
   </div>
 
   <footer>
-    {{ content.links }}
   </footer>
 
 </article>
@@ -134,4 +143,3 @@
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
-
