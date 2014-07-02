@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+#footer-center {
+
+  .navigation {
+
+    h3 {
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    a {
+      @include unstyled-link();
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

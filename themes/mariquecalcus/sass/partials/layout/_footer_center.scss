@@ -6,18 +6,19 @@
 /* Mobile First */
 #footer-center {
   @include container(96%);
+  padding: 1em 0;
 
-  .col1 {
-    @include span (12 of 12);
+  .contact {
+    @include span (12);
   }
-  .col2 {
-    @include span (12 of 12);
+  .navigation {
+    @include span (12);
   }
-  .col3 {
-    @include span (12 of 12);
+  .legal {
+    @include span (12);
   }
-  .col4 {
-    @include span (12 of 12);
+  .logo {
+    @include span (12);
   }
 
 }
@@ -27,17 +28,17 @@
   #footer-center {
     @include container(94%);
 
-    .col1 {
-      @include span (3 of 12);
+    .contact {
+      @include span (3);
     }
-    .col2 {
-      @include span (3 at 4 of 12);
+    .navigation {
+      @include span (3 at 4);
     }
-    .col3 {
-      @include span (3 at 7 of 12);
+    .legal {
+      @include span (3 at 7);
     }
-    .col4 {
-      @include span (3 at 10 of 12);
+    .logo {
+      @include span (3 at 10);
     }
   }
 }

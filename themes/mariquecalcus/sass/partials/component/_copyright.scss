@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.copyright {
+  font-size: 0.8em;
+  color: $blue-darker;
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

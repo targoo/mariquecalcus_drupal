@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.social {
+
+  ul {
+    @include horizontal-list(1em);
+
+    li {
+
+      a {
+
+        i {
+          font-size: 1em;
+          color: $blue-darker;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .social {
+    text-align: right;
+
+    ul {
+      @include horizontal-list(2em);
+      float: right;
+
+      li {
+
+        a {
+
+          i {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}

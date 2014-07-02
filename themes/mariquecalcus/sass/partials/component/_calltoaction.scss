@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.calltoaction {
+  a {
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 1;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -webkit-transition: all 200ms ease-in-out 0s;
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .calltoaction {
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}

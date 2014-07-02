@@ -6,6 +6,8 @@
 /* Mobile First */
 #footer-bottom {
   @include container(96%);
+  box-shadow: inset 0 1px rgba(36, 31, 85, 0.2);
+  padding: 1em 0;
 
   .copyright {
     @include span (12);

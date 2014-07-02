@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+#footer-center {
+
+  .logo {
+
+    a {
+      @include unstyled-link();
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

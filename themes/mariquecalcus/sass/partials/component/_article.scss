@@ -134,7 +134,7 @@
       }
     }
 
-    ul.list {
+    ul.package {
       padding: 0 0 10px;
 
       li {
@@ -142,11 +142,15 @@
 
         &:before {
           font-family: FontAwesome;
-          content: "\f058";
+          //content: "\f058";
+          content: "\f114";
+          //content: "\f068";
+          //content: "\f07c";
+          //content: "\f1db";
           font-size: 1em;
           float: left;
           padding: 0 10px 0 10px;
-          color: $green;
+          color: $blue;
         }
       }
     }

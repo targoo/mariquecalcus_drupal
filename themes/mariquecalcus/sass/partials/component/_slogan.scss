@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.slogan {
+}
+
+
+@include breakpoint($bp-desktop) {
+  .slogan {
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}
