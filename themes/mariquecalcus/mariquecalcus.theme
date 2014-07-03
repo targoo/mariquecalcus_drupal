@@ -5,7 +5,9 @@
  * Functions to support theming in the mariquecalcus theme.
  */
 
-use Drupal\Core\Template\RenderWrapper;
+use Drupal\Component\Utility\String;
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Template\Attribute;
 
 /**
  * Implements hook_preprocess_HOOK() for page templates.

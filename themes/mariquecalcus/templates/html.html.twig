@@ -28,24 +28,25 @@
 #}
 <!DOCTYPE html>
 <html{{ html_attributes }}>
-  <head>
-    {{ head }}
-    <meta name="google-site-verification" content="J5DnnTpgQVvYY8icmgXfkCkVrgWjGVat8i53tjeLdFk" />
-    <title>{{ head_title }}</title>
-    {{ styles }}
-    {{ scripts }}
-  </head>
-  <body{{ attributes }}>
-    {{ page_top }}
-    {{ page }}
-    {{ page_bottom }}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-10228211-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+<head>
+  <meta name="google-site-verification" content="J5DnnTpgQVvYY8icmgXfkCkVrgWjGVat8i53tjeLdFk" />
+  {{ page.head }}
+  <title>{{ head_title }}</title>
+  {{ page.styles }}
+  {{ page.scripts }}
+</head>
+<body{{ attributes }}>
+{{ page_top }}
+{{ page.content }}
+{{ page_bottom }}
+{{ page.scripts('footer') }}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-10228211-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>
