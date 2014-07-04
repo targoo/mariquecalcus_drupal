@@ -4,7 +4,7 @@
  */
 
 /* Mobile First */
-.node-article {
+.node--type-article {
 
   header {
 
@@ -171,7 +171,7 @@
 
 
 @include breakpoint($bp-tablet) {
-  .node-article {
+  .node--type-article {
 
     header {
 
@@ -212,7 +212,7 @@
 
 
 @include breakpoint($bp-desktop) {
-  .node-article {
+  .node--type-article {
 
     header {
       float: left;
