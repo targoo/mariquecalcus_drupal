@@ -25,10 +25,83 @@
         -webkit-transition: background 0.3s, box-shadow 0.3s;
         transition: background 0.3s, box-shadow 0.3s;
 
+        &:before {
+          font-family: FontAwesome;
+          font-size: 1em;
+          float: left;
+          padding: 0 10px 0 10px;
+          color: $blue-darker;
+        }
+
         &:hover {
           background: rgba(36, 31, 85,0.2);
           box-shadow: inset 0 -1px rgba(0,0,0,0);
           color: $white;
+        }
+      }
+
+      // About.
+      &.menu-62 {
+
+        a {
+          &:before {
+            content: "\f007";
+          }
+        }
+      }
+
+      // Services
+      &.menu-66 {
+
+        a {
+          &:before {
+            content: "\f121";
+          }
+        }
+      }
+
+      // Blogs
+      &.menu-63 {
+
+        a {
+          &:before {
+            content: "\f19a";
+          }
+        }
+      }
+
+      // Works
+      &.menu-65 {
+
+        a {
+          &:before {
+            content: "\f06e";
+          }
+        }
+      }
+
+      // Contact
+      &.menu-64 {
+
+        a {
+          &:before {
+            content: "\f0e0";
+          }
+        }
+      }
+
+      // Lab
+      &.menu-67 {
+        a {
+          background: rgba(13, 177, 75, 0.1);
+
+          &:hover {
+            background: rgba(13, 177, 75, 0.2);
+          }
+
+          &:before {
+            content: "\f0c3";
+          }
         }
       }
 

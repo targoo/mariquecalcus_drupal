@@ -4,10 +4,10 @@
  */
 
 // Breakpoint.
-$bp-small: 400px;
-$bp-tablet: 768px;
-$bp-desktop: 992px;
-$bp-large: 1200px;
+$bp-small: 4000px;
+$bp-tablet: 7680px;
+$bp-desktop: 9920px;
+$bp-large: 12000px;
 
 // Main color.
 $grey-light: #aaaaaa;
@@ -22,7 +22,7 @@ $blue: #6FB7E9;
 $blue-dark: #3C8DC5;
 $blue-darker: #241F55; // rgb(36, 31, 85)
 
-$green: #0DB14B;
+$green: #0DB14B; // rgb(13, 177, 75)
 
 $susy: (
   columns: 12,
