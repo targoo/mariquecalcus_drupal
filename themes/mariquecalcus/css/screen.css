@@ -2221,127 +2221,94 @@ html body.front .container #main-wrapper .intro .content {
  * Article.
  */
 /* Mobile First */
-/* line 7, ../sass/partials/component/_secondnav.scss */
+/* line 9, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu {
   list-style: none;
   *zoom: 1;
-  background: #aaaaaa;
+  background: #6fb7e9;
 }
-
-/* line 12, ../sass/partials/component/_secondnav.scss */
-#secondnav .menu:before,
-#secondnav .menu:after {
+/* line 14, ../sass/partials/component/_secondnav.scss */
+#secondnav .menu:before, #secondnav .menu:after {
   content: " ";
   display: table;
 }
-
-/* line 17, ../sass/partials/component/_secondnav.scss */
+/* line 20, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu:after {
   clear: both;
 }
-
-/* line 20, ../sass/partials/component/_secondnav.scss */
-#secondnav .menu ul {
-  list-style: none;
-  width: 9em;
-}
-
 /* line 24, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu a {
   padding: 10px 15px;
-  color: #fff;
+  color: white;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
 }
-
-/* line 28, ../sass/partials/component/_secondnav.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+#secondnav .menu a:active, #secondnav .menu a:focus {
+  outline: none;
+}
+/* line 30, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu li {
   position: relative;
 }
-
-/* line 31, ../sass/partials/component/_secondnav.scss */
+/* line 34, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu > li {
   float: left;
-  border-top: 1px solid #808080;
+}
+/* line 39, ../sass/partials/component/_secondnav.scss */
+#secondnav .menu ul {
+  list-style: none;
+  width: 15em;
+  background: #3c8dc5;
+}
+/* line 44, ../sass/partials/component/_secondnav.scss */
+#secondnav .menu ul li {
+  background: #3c8dc5;
+  color: white;
+  width: 100%;
+  font-size: 0.8em;
+}
+/* line 50, ../sass/partials/component/_secondnav.scss */
+#secondnav .menu ul li:hover {
+  color: #b2d1e5;
 }
 
-/* line 35, ../sass/partials/component/_secondnav.scss */
+/* line 58, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu > li > .parent {
-  background-image: url("images/downArrow.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-/* line 40, ../sass/partials/component/_secondnav.scss */
+/* line 62, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu > li > a {
   display: block;
 }
 
-/* line 43, ../sass/partials/component/_secondnav.scss */
+/* line 65, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu li ul {
   position: absolute;
   left: -9999px;
 }
 
-/* line 47, ../sass/partials/component/_secondnav.scss */
+/* line 69, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu > li:hover > ul {
   left: 0;
 }
 
-/* line 50, ../sass/partials/component/_secondnav.scss */
+/* line 72, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu li li:hover ul {
   left: 100%;
   top: 0;
 }
 
-/* line 54, ../sass/partials/component/_secondnav.scss */
+/* line 76, ../sass/partials/component/_secondnav.scss */
 #secondnav .menu li li a {
   display: block;
-  background: #1d7a62;
   position: relative;
   z-index: 100;
-  border-top: 1px solid #175e4c;
 }
 
-/* line 61, ../sass/partials/component/_secondnav.scss */
-#secondnav .menu li li li a {
-  background: #249578;
-  z-index: 200;
-  border-top: 1px solid #1d7a62;
-}
-
-@media (min-width: 992px) {
-  /* line 72, ../sass/partials/component/_secondnav.scss */
-  .active {
-    display: block;
-  }
-
-  /* line 75, ../sass/partials/component/_secondnav.scss */
-  #secondnav .menu > li {
-    float: none;
-  }
-
-  /* line 78, ../sass/partials/component/_secondnav.scss */
-  #secondnav .menu > li > .parent {
-    background-position: 95% 50%;
-  }
-
-  /* line 81, ../sass/partials/component/_secondnav.scss */
-  #secondnav .menu li li .parent {
-    background-image: url("images/downArrow.png");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-  }
-
-  /* line 86, ../sass/partials/component/_secondnav.scss */
-  #secondnav .menu ul {
-    display: block;
-    width: 100%;
-  }
-
-  /* line 90, ../sass/partials/component/_secondnav.scss */
-  #secondnav .menu > li:hover > ul, #secondnav .menu li li.hover ul {
-    position: static;
-  }
-}
 /**
  * @file
  * State.
