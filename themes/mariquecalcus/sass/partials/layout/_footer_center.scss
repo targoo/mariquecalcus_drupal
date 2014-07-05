@@ -29,6 +29,27 @@
     @include container(94%);
 
     .contact {
+      @include span (6);
+    }
+    .navigation {
+      @include span (6 at 7);
+    }
+    .legal {
+      @include span (6);
+    }
+    .logo {
+      @include span (6 at 7);
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #footer-center {
+    @include container(92%);
+    padding: 1em 0 1em 0;
+
+    .contact {
       @include span (3);
     }
     .navigation {
@@ -40,14 +61,6 @@
     .logo {
       @include span (3 at 10);
     }
-  }
-}
-
-
-@include breakpoint($bp-desktop) {
-  #footer-center {
-    @include container(92%);
-    padding: 1em 0 1em 0;
   }
 }
 

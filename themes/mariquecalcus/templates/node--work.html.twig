@@ -84,6 +84,10 @@
     {{ content.field_highlight }}
   </aside>
 
+  {% if view_mode == 'teaser' %}
+    <h2><a href="{{ url }}">{{ label }}</a></h2>
+  {% endif %}
+
   <div class="image">
     {{ content.field_image }}
   </div>
@@ -92,7 +96,7 @@
     {{ content|without('field_image','field_highlight') }}
 
     {% if view_mode == 'teaser' %}
-      <a href="{{ node_url }}">Read More</a>
+      <a href="{{ url }}">Read More</a>
     {% endif %}
 
   </div>

@@ -1,5 +1,50 @@
+/**
+ * @file
+ * Google Ads.
+ */
 
-
+/* Mobile First */
 .adsbygoogle {
-  background-color: $blue-light;
+  //background-color: $blue-light;
+  width: 100%!important;
+}
+
+.ads-desktop {
+  display: none;
+}
+
+.ads-tablet {
+  display: none;
+}
+
+.ads-mobile {
+  display: block;
+}
+
+@include breakpoint($bp-tablet) {
+  .ads-desktop {
+    display: none;
+  }
+
+  .ads-tablet {
+    display: block;
+  }
+
+  .ads-mobile {
+    display: none;
+  }
+}
+
+@include breakpoint($bp-desktop) {
+  .ads-desktop {
+    display: block;
+  }
+
+  .ads-tablet {
+    display: none;
+  }
+
+  .ads-mobile {
+    display: none;
+  }
 }

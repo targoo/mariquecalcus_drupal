@@ -37,10 +37,19 @@
           background: rgba(36, 31, 85,0.2);
           box-shadow: inset 0 -1px rgba(0,0,0,0);
           color: $white;
+
+          &:before {
+            color: $white;
+          }
+        }
+
+        &.active {
+          font-weight: bold;
         }
       }
 
       // About.
+      &.menu-62-active-trail,
       &.menu-62 {
 
         a {
@@ -51,6 +60,7 @@
       }
 
       // Services
+      &.menu-66-active-trail,
       &.menu-66 {
 
         a {
@@ -61,6 +71,7 @@
       }
 
       // Blogs
+      &.menu-63-active-trail,
       &.menu-63 {
 
         a {
@@ -71,6 +82,7 @@
       }
 
       // Works
+      &.menu-65-active-trail,
       &.menu-65 {
 
         a {
@@ -81,6 +93,7 @@
       }
 
       // Contact
+      &.menu-64-active-trail,
       &.menu-64 {
 
         a {
@@ -91,6 +104,7 @@
       }
 
       // Lab
+      &.menu-67-active-trail,
       &.menu-67 {
         a {
           background: rgba(13, 177, 75, 0.1);
@@ -117,22 +131,37 @@
 @include breakpoint($bp-tablet) {
   #main-menu {
     ul {
+      padding-right: 20px;
       li {
         a {
-          padding: 0 2em 0 0;
+          font-size: 0.9em;
+          padding: 0px 7px;
           margin: 0!important;;
           text-transform: uppercase;
           -webkit-box-shadow: none;
           -moz-box-shadow: none;
           box-shadow: none !important;
           color: $blue-darker;
+          background: transparent!important;
 
           &:hover {
-            background: transparent!important;;
+            background: transparent!important;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none !important;
-            color: $blue-darker;
+            color: $green;
+          }
+
+          &:before {
+            content: ""!important;
+            padding: 0;
+          }
+        }
+        // Lab
+        &.menu-67-active-trail,
+        &.menu-67 {
+          a {
+            background: rgba(13, 177, 75, 0.1)!important;
           }
         }
       }
@@ -143,11 +172,29 @@
 
 @include breakpoint($bp-desktop) {
   #main-menu {
+    ul {
+      padding-right: 40px;
+      li {
+        a {
+          font-size: 1em;
+          padding: 0 0.4em;
+        }
+      }
+    }
   }
 }
 
 
 @include breakpoint($bp-large) {
   #main-menu {
+    ul {
+      padding-right: 50px;
+      li {
+        a {
+          font-size: 1.1em;
+          padding: 0 1em;
+        }
+      }
+    }
   }
 }

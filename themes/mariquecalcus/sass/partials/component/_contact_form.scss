@@ -9,7 +9,7 @@
   padding: 1em 0;
 
   input[type="text"], input[type="email"] {
-    width: 100%;
+    width: 96%;
     padding: 15px;
     border: 1px solid $grey-light;
     font-size: 1em;
@@ -19,7 +19,7 @@
   }
 
   textarea {
-    width: 100%;
+    width: 96%;
     padding: 15px;
     border: 1px solid $grey-light;
     font-size: 1em;
@@ -45,13 +45,21 @@
 
 
 @include breakpoint($bp-tablet) {
-  .feedback-contact-message-form {
-    padding: 3em 0;
-  }
 }
 
 
 @include breakpoint($bp-desktop) {
+  .feedback-contact-message-form {
+    padding: 3em 0;
+
+    input[type="text"], input[type="email"] {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
 }
 
 

@@ -7,6 +7,24 @@
 @include breakpoint($bp-tablet) {
   body {
     #header {
+      height: 50px;
+      .navigation {
+        line-height: 50px;
+      }
+    }
+    #main-wrapper {
+      padding-top: 0;
+    }
+    //&.front #main-wrapper{
+    //   padding-top: 0!important;
+    //}
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  body {
+    #header {
       height: 100px;
       .navigation {
         line-height: 100px;
