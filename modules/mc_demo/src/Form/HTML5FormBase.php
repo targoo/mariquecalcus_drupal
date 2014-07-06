@@ -26,8 +26,11 @@ class HTML5FormBase extends FormBase {
    */
   public function buildForm(array $form, array &$form_state) {
 
-    // novalidate
+    $form['markup'] = array(
+      '#markup' => 'Check <a href="/blogs/html5ize-your-drupal-8-form" target="_blank">our blog entry</a> for more detail.',
+    );
 
+    // Email.
     $form['email'] = array(
       '#type' => 'email',
       '#title' => $this->t('Email:'),
@@ -37,6 +40,7 @@ class HTML5FormBase extends FormBase {
       ),
     );
 
+    // Url.
     $form['url'] = array(
       '#type' => 'url',
       '#title' => $this->t('Url:'),
@@ -45,14 +49,27 @@ class HTML5FormBase extends FormBase {
       ),
     );
 
+    // Tel.
     $form['tel'] = array(
       '#type' => 'tel',
       '#title' => $this->t('Tel:'),
     );
 
+    // Search.
+    $form['search'] = array(
+      '#type' => 'search',
+      '#title' => $this->t('Search:'),
+      '#autocomplete' => FALSE,
+      '#attributes' => array(
+        'placeholder' => 'What are you searching ?',
+      ),
+    );
+
+    // Color.
     $form['color'] = array(
       '#type' => 'color',
       '#title' => $this->t('Color:'),
+      '#default_value' => '#ff0000',
     );
 
     // Not yet supported for the core.
@@ -69,16 +86,19 @@ class HTML5FormBase extends FormBase {
       '#attributes' => array('list' => array('colors')),
     );
 
+    // Date.
     $form['date'] = array(
       '#type' => 'date',
       '#title' => $this->t('Date:'),
     );
 
+    // Not supported in drupal core.
     $form['time'] = array(
       '#type' => 'time',
       '#title' => $this->t('Time:'),
     );
 
+    // Datetime.
     $form['datetime'] = array(
       '#type' => 'datetime',
       '#title' => $this->t('Datetime:'),
@@ -126,11 +146,6 @@ class HTML5FormBase extends FormBase {
         'step' => 2,
         'value' => 6,
       ),
-    );
-
-    $form['search'] = array(
-      '#type' => 'search',
-      '#title' => $this->t('Search:'),
     );
 
     $form['show'] = array(
