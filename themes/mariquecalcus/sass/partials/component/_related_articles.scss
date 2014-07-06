@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Recent article.
+ */
+
+/* Mobile First */
+#block-views-block-content-related-articles {
+  background-color: $blue;
+  padding: 10px;
+
+  h4 {
+
+    a{
+      color: $white;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}

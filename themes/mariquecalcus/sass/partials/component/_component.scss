@@ -5,18 +5,21 @@
 
 //@import 'logo';
 @import 'navigation';
-@import 'all_article';
 @import 'process_item';
 @import 'technology_item';
 @import 'disqus';
 @import 'logo';
 @import 'splash';
 
-@import 'recent_article';
-@import 'related_article';
 @import 'article';
 
-//@import 'recent_article';
+@import 'recent_article';
+
+@import 'related_article';
+@import 'related_articles';
+
+@import 'all_article';
+
 @import 'work';
 
 @import 'mobile_navigation';
@@ -42,6 +45,8 @@
 
 @import 'secondnav';
 @import 'lab';
+
+@import 'syntaxhighlighter';
 
 //@import 'process';
 //@import 'carousel';
