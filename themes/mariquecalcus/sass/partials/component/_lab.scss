@@ -4,13 +4,33 @@
  */
 
 /* Mobile First */
+.messages--error {
+  padding: 5px;
+  background-color: $red;
+  color: $white;
+}
+
 .node {
+
+  b {
+    font-weight: bold;
+    color: $blue-darker;
+  }
+
   ul {
-    list-style-type: circle;
-    color: blue;
 
     li {
       margin-left: 30px;
+      padding: 0px 0px 0px 10px;
+
+      &:before {
+        font-family: FontAwesome;
+        content: "\f111";
+        font-size: 0.3em;
+        float: left;
+        padding: 0 10px 0 10px;
+        color: $blue;
+      }
 
       a {
         @include unstyled-link;
@@ -28,8 +48,22 @@
 }
 
 .comment-form {
-  .label {
+  label {
     font-size: 1em;
+    width: 110px;
+    display: block;
+    float: left;
+    padding: 10px;
+  }
+
+  .form-required {
+    color: $red;
+  }
+
+  .description {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-left: 2em;
   }
 
   input[type="text"] {
@@ -41,10 +75,20 @@
     @include border-radius(3px);
   }
 
+  .form-textarea-wrapper {
+    width: 98%;
+  }
+
+  .grippie {
+
+  }
+
   #edit-submit {
     @include buttonize($blue);
-    font-size: 0.6em;
+    font-size: 0.8em;
+    padding: 15px 15px 15px 15px;
     cursor: pointer;
+    margin-top: 1em;
   }
 
   #edit-preview {
@@ -62,20 +106,38 @@
 }
 
 .comment {
-  margin-left: 1em;
-  border-left: 5px solid green;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  border-left: 5px solid $green;
   padding-left: 5px;
 
   .permalink {
     display: none;
   }
+
+  .submitted {
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    color: $grey-light;
+  }
+
+  .links {
+    padding-top: 0.5em;
+
+    .comment-reply {
+      &:before {
+        content: " "!important;
+      }
+
+      a {
+        @include buttonize($green);
+        font-size: 0.8em;
+        padding: 15px 15px 15px 15px;
+        cursor: pointer;
+      }
+    }
+  }
 }
-
-.comment-reply {
-  // a
-}
-
-
 
 @include breakpoint($bp-tablet) {
 
