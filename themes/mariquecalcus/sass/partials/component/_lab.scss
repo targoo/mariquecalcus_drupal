@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Article.
+ */
+
+/* Mobile First */
+.node {
+  ul {
+    list-style-type: circle;
+    color: blue;
+
+    li {
+      margin-left: 30px;
+
+      a {
+        @include unstyled-link;
+      }
+    }
+  }
+}
+
+.filter-wrapper {
+  display: none;
+}
+
+.filter-guidelines {
+  display: none;
+}
+
+.comment-form {
+  .label {
+    font-size: 1em;
+  }
+
+  input[type="text"] {
+    padding: 15px;
+    border: 1px solid $grey-light;
+    font-size: 1em;
+    color: $blue;
+    background: $white;
+    @include border-radius(3px);
+  }
+
+  #edit-submit {
+    @include buttonize($blue);
+    font-size: 0.6em;
+    cursor: pointer;
+  }
+
+  #edit-preview {
+    display: none;
+  }
+}
+
+
+.messages__list {
+
+}
+
+.comment-add {
+  display: none;
+}
+
+.comment {
+  margin-left: 1em;
+  border-left: 5px solid green;
+  padding-left: 5px;
+
+  .permalink {
+    display: none;
+  }
+}
+
+.comment-reply {
+  // a
+}
+
+
+
+@include breakpoint($bp-tablet) {
+
+}
+
+
+@include breakpoint($bp-desktop) {
+
+}
+
+
+@include breakpoint($bp-large) {
+}
