@@ -86,33 +86,35 @@
  */
 #}
 
-
-<article id="node-{{ node.id }}" class="{{ attributes.class}} clearfix"{{ attributes }} role="article">
+<article id="node-{{ node.id }}" class="{{ attributes.class}} clearfix"{{ attributes }} role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
 
   <header>
-
     <div class="sharing">
       <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-      <a href="https://twitter.com/intent/tweet?text={{ label.0 }}’ ‘get_post_meta’ {{ node_url }}" class="twitter">
+      <a href="https://twitter.com/intent/tweet?text={{ label.0 }}&url=http://www.mariquecalcus.com{{ url }}" class="twitter">
         <i class="fa fa-twitter"></i> TWEET
       </a>
       <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;" class="facebook">
         <i class="fa fa-facebook"></i> SHARE
       </a>
-      <a href="https://plus.google.com/share?url=http://www.mariquecalcus.com{{ node_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="gplus">
+      <a href="https://plus.google.com/share?url=http://www.mariquecalcus.com{{ url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="gplus">
         <i class="fa fa-google-plus"></i> POST TO G+
       </a>
     </div>
 
     <div class="meta">
       <div class="created">
-        <i class="fa fa-calendar"></i> <span>Created on</span> {{ node.createdtime|date("d/m/Y") }}
+        <i class="fa fa-calendar"></i> <span>Created on</span> <time datetime="{{ node.createdtime|date("Y-m-d") }}" itemprop="datePublished">{{ node.createdtime|date("d/m/Y") }}</time>
       </div>
       <div class="updated">
-        <i class="fa fa-calendar"></i> <span>Updated on</span> {{ node.changedtime|date("d/m/Y") }}
+        <i class="fa fa-calendar"></i> <span>Updated on</span> <time datetime="{{ node.createdtime|date("Y-m-d") }}" itemprop="dateModified">{{ node.changedtime|date("d/m/Y") }}</time>
       </div>
       <div class="author">
-        <i class="fa fa-user"></i> <span>Written By</span> David Calcus
+        <i class="fa fa-user"></i>
+        <span>Written By</span>
+        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            <span itemprop="name">David Calcus</span>
+        </span>
       </div>
     </div>
 
@@ -121,10 +123,14 @@
   <div class="content "{{ content_attributes }}>
 
     {% if view_mode == 'teaser' %}
-      <h2><a href="{{ url }}">{{ label }}</a></h2>
+      <h2 itemprop="name headline"><a href="{{ url }}">{{ label }}</a></h2>
+    {% else %}
+      <span itemprop="name headline" style="display: none"><a href="{{ url }}">{{ label }}</a></span>
     {% endif %}
 
-    {{ content|without('links') }}
+    <div itemprop="articleBody">
+      {{ content|without('links') }}
+    </div>
 
     {% if view_mode == 'teaser' %}
       <a href="{{ url }}">Read More</a>
