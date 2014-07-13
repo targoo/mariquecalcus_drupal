@@ -1158,7 +1158,7 @@ b {
   /* line 136, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a {
     font-size: 0.9em;
-    padding: 0px 6px;
+    padding: 0px 5px;
     margin: 0 !important;
     text-transform: uppercase;
     -webkit-box-shadow: none;
@@ -1193,7 +1193,7 @@ b {
   /* line 178, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a {
     font-size: 1em;
-    padding: 0 0.4em;
+    padding: 0 0.1em;
   }
 }
 @media (min-width: 1200px) {
@@ -1204,7 +1204,7 @@ b {
   /* line 193, ../sass/partials/component/_navigation.scss */
   #main-menu ul li a {
     font-size: 1.1em;
-    padding: 0 1em;
+    padding: 0 0.9em;
   }
 }
 /**
