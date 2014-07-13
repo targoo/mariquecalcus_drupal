@@ -6,7 +6,6 @@
 @import 'global';
 @import 'section';
 @import 'process';
-@import 'recent_articles';
 @import 'main';
 
 @import 'footer_top';
@@ -15,5 +14,6 @@
 
 @import 'taxonomoy';
 
-//@import 'navigation';
-//@import 'recent_articles';
+@import 'all_works';
+
+@import 'recent_articles';

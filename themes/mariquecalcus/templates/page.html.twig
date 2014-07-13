@@ -112,7 +112,7 @@
 
     <main id="main" role="main">
 
-      <div id="content-wrapper">
+      <div id="content-wrapper" {% if page.aside_right %} class="aside_right"{% endif %}>
 
         {{ messages }}
 
@@ -132,9 +132,11 @@
         {{ page.content }}
         </div>
 
+        {% if page.aside_right %}
         <aside id="aside_right">
           {{ page.aside_right }}
         </aside>
+        {% endif %}
 
       </div>
 

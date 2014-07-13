@@ -4,7 +4,7 @@
  */
 
 /* Mobile First */
-.node--type-work {
+.work {
 
   .aside {
     float: none;
@@ -31,7 +31,7 @@
 
 
 @include breakpoint($bp-desktop) {
-  .node-work {
+  .work {
 
   }
 }

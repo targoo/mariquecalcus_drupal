@@ -1,0 +1,40 @@
+/**
+ * @file
+ * Global elements.
+ */
+.view-display-id-all_works {
+  @include container(96%);
+  .col1 {
+    @include span (12);
+  }
+  .col2 {
+    @include span (12);
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .view-display-id-all_works {
+    @include container(94%);
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .view-display-id-all_works {
+    @include container(92%);
+    .col1 {
+      @include span (6);
+    }
+    .col2 {
+      @include span (6 at 7);
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .view-display-id-all_works {
+    @include container(90%);
+  }
+}

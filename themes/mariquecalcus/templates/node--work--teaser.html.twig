@@ -78,31 +78,29 @@
   {% endfor %}
 </ol-->
 
-<article id="node-{{ node.id }}" class="work {{ attributes.class}} clearfix"{{ attributes }} role="article">
+<article id="node-{{ node.id }}" class="work-teaser {{ attributes.class}} clearfix" {{ attributes }} role="article">
 
-  <aside class="aside">
-    {{ content.field_highlight }}
-  </aside>
-
-  {% if view_mode == 'teaser' %}
-    <h2><a href="{{ url }}">{{ label }}</a></h2>
-  {% endif %}
+  <h2 class="title"><a href="{{ url }}">{{ label }}</a></h2>
 
   <div class="image">
     {{ content.field_image }}
   </div>
 
-  <div class="content clearfix"{{ content_attributes }}>
+  <div class="content" {{ content_attributes }}>
 
     {{ content|without('field_image','field_highlight') }}
 
-    {% if view_mode == 'teaser' %}
-      <a href="{{ url }}">Read More</a>
-    {% endif %}
+    <div class="drawing">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="200px" height="50px" viewBox="0 0 200 50" enable-background="new 0 0 200 50" xml:space="preserve">
+        <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,5h200"/>
+        <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M200,46.034L0,45.966"/>
+        <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M0.5,4.998L0.472,46"/>
+        <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M199.5,46V5"/>
+      </svg>
+      <a class='read-more' href="{{ url }}">Read More</a>
+    </div>
 
   </div>
-
-  <footer>
-  </footer>
 
 </article>

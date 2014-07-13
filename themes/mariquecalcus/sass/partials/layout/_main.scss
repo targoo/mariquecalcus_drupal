@@ -45,12 +45,15 @@
     #content-wrapper {
       @include container(92%);
 
-      #page-content {
-        @include span (8 of 12);
-      }
+      // If aside right
+      &.aside_right {
+        #page-content {
+          @include span (8 of 12);
+        }
 
-      #aside_right {
-        @include span (4 at 9 of 12);
+        #aside_right {
+          @include span (4 at 9 of 12);
+        }
       }
     }
   }
@@ -63,12 +66,15 @@
     #content-wrapper {
       @include container(90%);
 
-      #page-content {
-        @include span (9 of 12);
-      }
+      // If aside right
+      &.aside_right {
+        #page-content {
+          @include span (9 of 12);
+        }
 
-      #aside_right {
-        @include span (3 at 10 of 12);
+        #aside_right {
+          @include span (3 at 10 of 12);
+        }
       }
     }
   }
