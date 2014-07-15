@@ -3,6 +3,9 @@
  * Component (Module) elements.
  */
 
+
+@import 'button';
+
 //@import 'logo';
 @import 'navigation';
 @import 'process_item';
@@ -16,6 +19,7 @@
 @import 'recent_article';
 
 @import 'related_article';
+
 @import 'related_articles';
 
 @import 'all_article';
@@ -50,9 +54,3 @@
 @import 'syntaxhighlighter';
 
 @import 'hierarchical_tree';
-
-//@import 'process';
-//@import 'carousel';
-//@import 'toolbar';
-//@import 'splash';
-//@import 'footer';

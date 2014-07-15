@@ -15,30 +15,6 @@
     }
   }
 
-  .drawing {
-    position: relative;
-
-
-    .read-more {
-      position: absolute;
-      top: 8px;
-      left: 3px;
-      background: $blue-dark;
-      color: inherit;
-      @include unstyled-link();
-      width: 173px;
-      line-height: 29px;
-      color: $white;
-      padding: 3px 10px;
-      text-align: center;
-      @include transition(background-color .5s ease-in);
-      text-rendering: optimizeLegibility;
-
-      &:hover {
-        background: $blue-darker;
-      }
-    }
-  }
 }
 
 

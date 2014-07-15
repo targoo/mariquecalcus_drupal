@@ -158,11 +158,6 @@
 
     a {
       @include unstyled-link();
-      color: $green;
-
-      &:hover {
-        color: $blue;
-      }
     }
   }
 

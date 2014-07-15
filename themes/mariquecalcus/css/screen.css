@@ -1061,6 +1061,46 @@ b {
  */
 /**
  * @file
+ * Button.
+ */
+/* Mobile First */
+/* line 7, ../sass/partials/component/_button.scss */
+.button {
+  position: relative;
+}
+/* line 10, ../sass/partials/component/_button.scss */
+.button a {
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  background: #3c8dc5;
+  color: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  width: 173px;
+  line-height: 29px;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  -moz-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  text-rendering: optimizeLegibility;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+.button a:active, .button a:focus {
+  outline: none;
+}
+/* line 25, ../sass/partials/component/_button.scss */
+.button a:hover {
+  background: #241f55;
+  color: white;
+}
+
+/**
+ * @file
  * Navigation.
  */
 /* Mobile First */
@@ -1636,19 +1676,14 @@ html body.front .container #main-wrapper .intro .content {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
-  color: #0db14b;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
 .node--type-article .content a:active, .node--type-article .content a:focus {
   outline: none;
 }
-/* line 163, ../sass/partials/component/_article.scss */
-.node--type-article .content a:hover {
-  color: #6fb7e9;
-}
 
 @media (min-width: 768px) {
-  /* line 179, ../sass/partials/component/_article.scss */
+  /* line 174, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing {
     max-width: 100%;
     margin-left: auto;
@@ -1660,7 +1695,7 @@ html body.front .container #main-wrapper .intro .content {
     display: block;
     clear: both;
   }
-  /* line 182, ../sass/partials/component/_article.scss */
+  /* line 177, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .twitter {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1668,7 +1703,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 186, ../sass/partials/component/_article.scss */
+  /* line 181, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .facebook {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1676,7 +1711,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 190, ../sass/partials/component/_article.scss */
+  /* line 185, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .gplus {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1684,7 +1719,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: right;
   }
-  /* line 195, ../sass/partials/component/_article.scss */
+  /* line 190, ../sass/partials/component/_article.scss */
   .node--type-article header .meta {
     max-width: 100%;
     margin-left: auto;
@@ -1696,7 +1731,7 @@ html body.front .container #main-wrapper .intro .content {
     display: block;
     clear: both;
   }
-  /* line 198, ../sass/partials/component/_article.scss */
+  /* line 193, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .created {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1704,7 +1739,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 202, ../sass/partials/component/_article.scss */
+  /* line 197, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .updated {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1712,7 +1747,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 33.33333%;
     float: left;
   }
-  /* line 206, ../sass/partials/component/_article.scss */
+  /* line 201, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .author {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1722,16 +1757,16 @@ html body.front .container #main-wrapper .intro .content {
   }
 }
 @media (min-width: 992px) {
-  /* line 218, ../sass/partials/component/_article.scss */
+  /* line 213, ../sass/partials/component/_article.scss */
   .node--type-article header {
     float: left;
     width: 26%;
   }
-  /* line 222, ../sass/partials/component/_article.scss */
+  /* line 217, ../sass/partials/component/_article.scss */
   .node--type-article header .meta {
     font-size: 0.6em;
   }
-  /* line 224, ../sass/partials/component/_article.scss */
+  /* line 219, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .created {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1739,7 +1774,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 227, ../sass/partials/component/_article.scss */
+  /* line 222, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .updated {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1747,7 +1782,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 230, ../sass/partials/component/_article.scss */
+  /* line 225, ../sass/partials/component/_article.scss */
   .node--type-article header .meta .author {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1755,11 +1790,11 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 235, ../sass/partials/component/_article.scss */
+  /* line 230, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing {
     font-size: 0.6em;
   }
-  /* line 237, ../sass/partials/component/_article.scss */
+  /* line 232, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .twitter {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1767,7 +1802,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 240, ../sass/partials/component/_article.scss */
+  /* line 235, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .facebook {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1775,7 +1810,7 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 243, ../sass/partials/component/_article.scss */
+  /* line 238, ../sass/partials/component/_article.scss */
   .node--type-article header .sharing .gplus {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1783,35 +1818,35 @@ html body.front .container #main-wrapper .intro .content {
     width: 100%;
     float: left;
   }
-  /* line 250, ../sass/partials/component/_article.scss */
+  /* line 245, ../sass/partials/component/_article.scss */
   .node--type-article .content {
     float: right;
     width: 73%;
   }
-  /* line 254, ../sass/partials/component/_article.scss */
+  /* line 249, ../sass/partials/component/_article.scss */
   .node--type-article .content .field-name-field-image {
     width: 80%;
     margin-left: -37%;
     float: left;
     margin-right: 2%;
   }
-  /* line 261, ../sass/partials/component/_article.scss */
+  /* line 256, ../sass/partials/component/_article.scss */
   .node--type-article .content .field-name-field-references {
     background-color: #e9f2f9;
     margin-top: 1em;
     padding: 1em;
   }
-  /* line 271, ../sass/partials/component/_article.scss */
+  /* line 266, ../sass/partials/component/_article.scss */
   .node--type-article .content .field-name-field-tags {
     margin-top: 10px;
     border-top: 5px #b2d1e5 solid;
     border-bottom: 5px #b2d1e5 solid;
   }
-  /* line 276, ../sass/partials/component/_article.scss */
+  /* line 271, ../sass/partials/component/_article.scss */
   .node--type-article .content .field-name-field-tags .field-items {
     display: inline-flex;
   }
-  /* line 279, ../sass/partials/component/_article.scss */
+  /* line 274, ../sass/partials/component/_article.scss */
   .node--type-article .content .field-name-field-tags .field-items .field-item {
     padding-right: 1em;
   }
@@ -2004,42 +2039,9 @@ html body.front .container #main-wrapper .intro .content {
 .work-teaser .title a:active, .work-teaser .title a:focus {
   outline: none;
 }
-/* line 18, ../sass/partials/component/_work_teaser.scss */
-.work-teaser .drawing {
-  position: relative;
-}
-/* line 22, ../sass/partials/component/_work_teaser.scss */
-.work-teaser .drawing .read-more {
-  position: absolute;
-  top: 8px;
-  left: 3px;
-  background: #3c8dc5;
-  color: inherit;
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  width: 173px;
-  line-height: 29px;
-  color: white;
-  padding: 3px 10px;
-  text-align: center;
-  -moz-transition: background-color 0.5s ease-in;
-  -o-transition: background-color 0.5s ease-in;
-  -webkit-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
-  text-rendering: optimizeLegibility;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
-.work-teaser .drawing .read-more:active, .work-teaser .drawing .read-more:focus {
-  outline: none;
-}
-/* line 37, ../sass/partials/component/_work_teaser.scss */
-.work-teaser .drawing .read-more:hover {
-  background: #241f55;
-}
 
 @media (min-width: 992px) {
-  /* line 46, ../sass/partials/component/_work_teaser.scss */
+  /* line 22, ../sass/partials/component/_work_teaser.scss */
   .work-teaser {
     padding-bottom: 3em;
   }
@@ -2385,17 +2387,7 @@ html body.front .container #main-wrapper .intro .content {
 /* Mobile First */
 /* line 8, ../sass/partials/component/_calltoaction.scss */
 .calltoaction a {
-  border: 2px solid #FFF;
-  color: #FFF;
-  text-decoration: none;
-  padding: 10px 20px;
-  line-height: 1;
-  display: inline-block;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 200ms ease-in-out 0s;
-  -moz-transition: all 200ms ease-in-out 0s;
-  -webkit-transition: all 200ms ease-in-out 0s;
+  background-color: #0db14b;
 }
 
 /**
@@ -2409,6 +2401,16 @@ html body.front .container #main-wrapper .intro .content {
   text-transform: uppercase;
 }
 /* line 16, ../sass/partials/component/_footer_legal.scss */
+#footer-center .legal ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../sass/partials/component/_footer_legal.scss */
+#footer-center .legal ul li {
+  padding-left: 0px;
+  list-style-type: none;
+}
+/* line 26, ../sass/partials/component/_footer_legal.scss */
 #footer-center .legal a {
   color: inherit;
   text-decoration: inherit;
@@ -2417,6 +2419,10 @@ html body.front .container #main-wrapper .intro .content {
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
 #footer-center .legal a:active, #footer-center .legal a:focus {
   outline: none;
+}
+/* line 29, ../sass/partials/component/_footer_legal.scss */
+#footer-center .legal a:hover {
+  color: #0db14b;
 }
 
 /**
@@ -2430,6 +2436,16 @@ html body.front .container #main-wrapper .intro .content {
   text-transform: uppercase;
 }
 /* line 16, ../sass/partials/component/_footer_contact.scss */
+#footer-center .contact ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../sass/partials/component/_footer_contact.scss */
+#footer-center .contact ul li {
+  padding-left: 0px;
+  list-style-type: none;
+}
+/* line 26, ../sass/partials/component/_footer_contact.scss */
 #footer-center .contact a {
   color: inherit;
   text-decoration: inherit;
@@ -2438,6 +2454,10 @@ html body.front .container #main-wrapper .intro .content {
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
 #footer-center .contact a:active, #footer-center .contact a:focus {
   outline: none;
+}
+/* line 29, ../sass/partials/component/_footer_contact.scss */
+#footer-center .contact a:hover {
+  color: #0db14b;
 }
 
 /**
@@ -2467,6 +2487,16 @@ html body.front .container #main-wrapper .intro .content {
   text-transform: uppercase;
 }
 /* line 16, ../sass/partials/component/_footer_navigation.scss */
+#footer-center .navigation ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../sass/partials/component/_footer_navigation.scss */
+#footer-center .navigation ul li {
+  padding-left: 0px;
+  list-style-type: none;
+}
+/* line 26, ../sass/partials/component/_footer_navigation.scss */
 #footer-center .navigation a {
   color: inherit;
   text-decoration: inherit;
@@ -2475,6 +2505,10 @@ html body.front .container #main-wrapper .intro .content {
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
 #footer-center .navigation a:active, #footer-center .navigation a:focus {
   outline: none;
+}
+/* line 29, ../sass/partials/component/_footer_navigation.scss */
+#footer-center .navigation a:hover {
+  color: #0db14b;
 }
 
 /**
