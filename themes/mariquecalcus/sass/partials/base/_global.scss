@@ -7,3 +7,12 @@ strong,
 b {
   font-weight: bold;
 }
+
+a {
+  @include unstyled-link();
+  color: $green;
+
+  &:hover {
+    color: $blue;
+  }
+}

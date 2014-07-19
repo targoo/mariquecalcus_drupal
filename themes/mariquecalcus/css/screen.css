@@ -64,6 +64,22 @@ b {
   font-weight: bold;
 }
 
+/* line 11, ../sass/partials/base/_global.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #0db14b;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+/* line 15, ../sass/partials/base/_global.scss */
+a:hover {
+  color: #6fb7e9;
+}
+
 /**
  * @file
  * Layout elements.
@@ -1670,16 +1686,6 @@ html body.front .container #main-wrapper .intro .content {
   float: left;
   padding: 0 10px 0 10px;
   color: #6fb7e9;
-}
-/* line 159, ../sass/partials/component/_article.scss */
-.node--type-article .content a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/links/_unstyled-link.scss */
-.node--type-article .content a:active, .node--type-article .content a:focus {
-  outline: none;
 }
 
 @media (min-width: 768px) {
