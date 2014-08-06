@@ -30,12 +30,16 @@ Disallow: /comment/reply/
 Disallow: /filter/tips/
 Disallow: /node/add/
 Disallow: /node/
-Disallow: /demo/node/
 Disallow: /search/
 Disallow: /user/register/
 Disallow: /user/password/
 Disallow: /user/login/
 Disallow: /user/logout/
+Disallow: /demo/node
+Disallow: /demo/node/
+Disallow: /taxonomy/
+Disallow: /demo/twitterfield-pull
+Disallow: /demo/twitterfield-pull/all
 # Paths (no clean URLs)
 Disallow: /index.php/admin/
 Disallow: /index.php/comment/reply/

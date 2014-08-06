@@ -80,6 +80,11 @@ a:hover {
   color: #6fb7e9;
 }
 
+/* line 20, ../sass/partials/base/_global.scss */
+sup {
+  top: -5px;
+}
+
 /**
  * @file
  * Layout elements.
