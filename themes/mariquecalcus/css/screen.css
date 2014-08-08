@@ -82,7 +82,9 @@ a:hover {
 
 /* line 20, ../sass/partials/base/_global.scss */
 sup {
-  top: -5px;
+  top: -6px;
+  position: relative;
+  font-size: 0.7em;
 }
 
 /**
