@@ -6,6 +6,7 @@ sites/default/settings.php
 modules/examples/
 modules/honeypot/
 modules/ibpcatalog/
+modules/devel/
 sites/default/settings.php_old
 themes/mayo/
 themes/ombak/
