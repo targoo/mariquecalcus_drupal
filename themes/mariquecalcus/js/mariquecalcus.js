@@ -3,7 +3,7 @@
  * Misc JQuery scripts in this file
  */
 
-(function ($, window, Drupal, drupalSettings) {
+(function ($) {
 
     "use strict";
 
@@ -54,4 +54,4 @@
 
     });
 
-})(jQuery, this, Drupal, drupalSettings);
+})(jQuery);
