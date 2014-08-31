@@ -151,8 +151,6 @@
             },
             scrollPage = function() {
                 svgs.forEach( function( el, i ) {
-                    console.log(el.parentNode);
-                    console.log(inViewport( el.parentNode, 0.5 ));
                     if( inViewport( el.parentNode, 0.5 ) ) {
                         svgArr[i].render();
                     }
