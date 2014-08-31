@@ -3,9 +3,11 @@
  * Misc JQuery scripts in this file
  */
 
-(function ($) {
+(function ($, window, Drupal, drupalSettings) {
 
-  Drupal.behaviors.miscMariquecalus = {
+    "use strict";
+
+    Drupal.behaviors.miscMariquecalus = {
     attach: function (context, settings) {
 
       $(document).ready(function($) {
@@ -58,4 +60,4 @@
     }
   }
 
-})(jQuery);
+})(jQuery, this, Drupal, drupalSettings);
