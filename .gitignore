@@ -3,4 +3,12 @@ sites/default/settings.php
 .DS_Store
 .editorconfig
 .idea/
+modules/examples/
+modules/honeypot/
+modules/ibpcatalog/
+sites/default/settings.php_old
+themes/mayo/
+themes/ombak/
+themes/omega/
+themes/zurb_foundation/
 theme/prius
