@@ -80,26 +80,9 @@
  */
 #}
 
-<!--ol
-  {% for key, value in node  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol-->
-
 <div class="container">
 
-  <header id="header">
-    <div class="logo">
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
-      </a>
-    </div>
-
-    {% if main_menu %}
-      <nav id ="main-menu" class="navigation" role="navigation">
-        {{ main_menu }}
-      </nav>
-    {% endif %}
-  </header>
+  {% include 'themes/mariquecalcus/templates/header.html.twig' %}
 
   <div id="main-wrapper">
 
@@ -112,15 +95,16 @@
 
     <main id="main" role="main">
 
-      <div id="content-wrapper">
+      <div id="content-wrapper" class="aside_right_large">
 
         {{ messages }}
 
-        {% if title %}
-          <h1 class="title" id="page-title">
-            {{ title }}
-          </h1>
-        {% endif %}
+        <h1 class="title" id="page-title">
+          {{ title }}
+        </h1>
+        <h2 class="subtitle">
+          If you like our works, then we’d love to hear from you.
+        </h2>
 
         {{ tabs }}
 
@@ -133,9 +117,75 @@
         </div>
 
         <aside id="aside_right">
-          {{ page.aside_right }}
-        </aside>
 
+          <div id="contact" class="contact-detail">
+
+            <h3>Contact info</h3>
+
+            <div itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+              <ul class="contact-info">
+                <li><strong>Email</strong><span itemprop="email"><a href="mailto:info@mariquecalcus.com"> info@mariquecalcus.com</a></span></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div id="contact-london" class="contact-detail">
+
+            <h3>London office</h3>
+
+            <h4>Calcus David</h4>
+            <h5>Director</h5>
+
+            <div itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+              <ul class="contact-info">
+                <li><strong>Phone</strong><span itemprop="telephone"> (+44) 7548589864</span></li>
+                <li><strong>Email</strong><span itemprop="email"><a href="mailto:david@mariquecalcus.com"> david@mariquecalcus.com</a></span></li>
+              </ul>
+
+              <ul itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address">
+                <li>
+                  <strong>Address</strong><br>
+                  <span itemprop="streetAddress">BN13 3QZ Martlet house</span><br>
+                  <span itemprop="streetAddress">E1 Yeoman gate Yeoman way</span><br>
+                  Worthing, London, United Kingdom
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div id="contact-brussel" class="contact-detail">
+
+            <h3>Brussels/Charleroi office</h3>
+
+            <h4>Benjamin Marique</h4>
+            <h5>Director</h5>
+
+            <div itemscope="" itemtype="http://schema.org/LocalBusiness">
+
+              <ul class="contact-info">
+                <li><strong>Phone</strong><span itemprop="telephone"> (+44) 7548589864</span></li>
+                <li><strong>Email</strong><span itemprop="email"><a href="mailto:benjamin@mariquecalcus.com"> benjamin@mariquecalcus.com</a></span></li>
+              </ul>
+
+              <ul itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address">
+                <li>
+                  <strong>Address</strong><br>
+                  <span itemprop="streetAddress">Rue d'Orléans 42</span><br>
+                  6000 Charleroi
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </aside>
 
       </div>
 
@@ -174,59 +224,7 @@
 
     </div>
 
-    <footer id="footer" class="footer">
-
-      <div id="footer-top">
-        <div class="slogan">
-          We'd love to hear from you.
-        </div>
-        <div class="calltoaction">
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
-
-      <div id="footer-center">
-        <div class="contact">
-          <h3>Contact</h3>
-          <ul>
-            <li class="first">info@mariquecalcus.com</li>
-          </ul>
-        </div>
-        <div class="navigation">
-          <h3>Navigate</h3>
-          <ul>
-            <li class="first"><a href="/about">About us</a></li>
-            <li class=""><a href="/services">Services</a></li>
-            <li class=""><a href="/blogs">Blogs</a></li>
-            <li class="last"><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="legal">
-          <h3>Legal stuff</h3>
-          <ul>
-            <li class="first"><a href="/legal/privacy-policy">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="logo">
-          <img src="/themes/mariquecalcus/images/logos/logo_medium.svg" alt="" />
-        </div>
-      </div>
-
-      <div id="footer-bottom">
-        <div class="copyright">
-          Copyright {{ "now"|date("Y") }} by Mariquecalcus. All rights reserved.
-        </div>
-        <div class="social">
-          <ul>
-            <li><a href="https://www.facebook.com" alt="Friend us on Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://plus.google.com" alt="Follow us on Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="https://twitter.com" alt="Follow us on Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com" alt="Network with us on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-    </footer>
+    {% include 'themes/mariquecalcus/templates/footer.html.twig' %}
 
   </div>
 

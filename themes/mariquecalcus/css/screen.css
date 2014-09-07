@@ -144,35 +144,43 @@ sup {
   display: block;
   clear: both;
 }
-
+/* line 13, ../sass/partials/layout/_section.scss */
+.decor .content a {
+  color: #6fb7e9;
+}
 /* line 15, ../sass/partials/layout/_section.scss */
+.decor .content a:hover {
+  color: #0db14b;
+}
+
+/* line 22, ../sass/partials/layout/_section.scss */
 .white {
   background: white;
   color: #6fb7e9;
 }
-/* line 18, ../sass/partials/layout/_section.scss */
+/* line 25, ../sass/partials/layout/_section.scss */
 .white::before {
   background: #e9f2f9;
 }
 
-/* line 23, ../sass/partials/layout/_section.scss */
+/* line 30, ../sass/partials/layout/_section.scss */
 .blue {
   background: #b2d1e5;
   color: white;
 }
-/* line 26, ../sass/partials/layout/_section.scss */
+/* line 33, ../sass/partials/layout/_section.scss */
 .blue::before {
   background: #e9f2f9;
 }
 
 @media (min-width: 768px) {
-  /* line 33, ../sass/partials/layout/_section.scss */
+  /* line 40, ../sass/partials/layout/_section.scss */
   .decor {
     position: relative;
     padding: 4em 0 4em;
     z-index: 1;
   }
-  /* line 38, ../sass/partials/layout/_section.scss */
+  /* line 45, ../sass/partials/layout/_section.scss */
   .decor .content {
     max-width: 96%;
     margin-left: auto;
@@ -186,11 +194,11 @@ sup {
   }
 }
 @media (min-width: 992px) {
-  /* line 75, ../sass/partials/layout/_section.scss */
+  /* line 82, ../sass/partials/layout/_section.scss */
   .decor {
     padding: 6em 0 6em;
   }
-  /* line 78, ../sass/partials/layout/_section.scss */
+  /* line 85, ../sass/partials/layout/_section.scss */
   .decor .content {
     max-width: 92%;
     margin-left: auto;
@@ -204,7 +212,7 @@ sup {
   }
 }
 @media (min-width: 1200px) {
-  /* line 88, ../sass/partials/layout/_section.scss */
+  /* line 95, ../sass/partials/layout/_section.scss */
   .decor .content {
     max-width: 90%;
     margin-left: auto;
@@ -406,7 +414,7 @@ sup {
 @media (min-width: 992px) {
   /* line 41, ../sass/partials/layout/_main.scss */
   #main {
-    padding-top: 200px;
+    padding-top: 170px;
     padding-bottom: 100px;
   }
   /* line 45, ../sass/partials/layout/_main.scss */
@@ -437,9 +445,25 @@ sup {
     width: 33.33333%;
     float: right;
   }
+  /* line 61, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper.aside_right_large #page-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+  }
+  /* line 65, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper.aside_right_large #aside_right {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 66, ../sass/partials/layout/_main.scss */
+  /* line 78, ../sass/partials/layout/_main.scss */
   #main #content-wrapper {
     max-width: 90%;
     margin-left: auto;
@@ -451,7 +475,7 @@ sup {
     display: block;
     clear: both;
   }
-  /* line 71, ../sass/partials/layout/_main.scss */
+  /* line 83, ../sass/partials/layout/_main.scss */
   #main #content-wrapper.aside_right #page-content {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -459,12 +483,28 @@ sup {
     width: 75%;
     float: left;
   }
-  /* line 75, ../sass/partials/layout/_main.scss */
+  /* line 87, ../sass/partials/layout/_main.scss */
   #main #content-wrapper.aside_right #aside_right {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 25%;
+    float: right;
+  }
+  /* line 94, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper.aside_right_large #page-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58.33333%;
+    float: left;
+  }
+  /* line 98, ../sass/partials/layout/_main.scss */
+  #main #content-wrapper.aside_right_large #aside_right {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 41.66667%;
     float: right;
   }
 }
@@ -1439,7 +1479,7 @@ sup {
  * Logo.
  */
 /* Mobile First */
-/* line 11, ../sass/partials/component/_splash.scss */
+/* line 12, ../sass/partials/component/_splash.scss */
 html body.front .container #main-wrapper .intro {
   height: 100%;
   background: transparent url("/themes/mariquecalcus/images/splash/splash.svg") center center no-repeat;
@@ -1452,11 +1492,11 @@ html body.front .container #main-wrapper .intro {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 23, ../sass/partials/component/_splash.scss */
+/* line 24, ../sass/partials/component/_splash.scss */
 html body.front .container #main-wrapper .intro h1 {
   font-size: 1.4em;
 }
-/* line 27, ../sass/partials/component/_splash.scss */
+/* line 28, ../sass/partials/component/_splash.scss */
 html body.front .container #main-wrapper .intro .content {
   width: 100%;
   overflow: hidden;
@@ -1469,32 +1509,127 @@ html body.front .container #main-wrapper .intro .content {
 }
 
 @media (min-width: 768px) {
-  /* line 45, ../sass/partials/component/_splash.scss */
+  /* line 46, ../sass/partials/component/_splash.scss */
   html {
     /* all the tags up to .fullscreen-cont must have this style */
     height: 100%;
   }
-  /* line 48, ../sass/partials/component/_splash.scss */
+  /* line 49, ../sass/partials/component/_splash.scss */
   html body.front {
     height: 100%;
   }
-  /* line 50, ../sass/partials/component/_splash.scss */
+  /* line 51, ../sass/partials/component/_splash.scss */
   html body.front .container {
     height: 100%;
     overflow: visible;
   }
-  /* line 53, ../sass/partials/component/_splash.scss */
+  /* line 54, ../sass/partials/component/_splash.scss */
   html body.front .container #main-wrapper {
     height: 100%;
   }
-  /* line 57, ../sass/partials/component/_splash.scss */
+  /* line 58, ../sass/partials/component/_splash.scss */
   html body.front .container #main-wrapper .intro h1 {
     font-size: 2em;
   }
-  /* line 61, ../sass/partials/component/_splash.scss */
+  /* line 62, ../sass/partials/component/_splash.scss */
   html body.front .container #main-wrapper .intro .content {
     top: 150px;
     font-size: 1.4em;
+  }
+}
+@media (min-width: 992px) {
+  /* line 80, ../sass/partials/component/_splash.scss */
+  #main-wrapper .intro h1 {
+    font-size: 2.5em;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  /* line 88, ../sass/partials/component/_splash.scss */
+  #main-wrapper .intro .content {
+    top: 150px;
+    font-size: 1.4em;
+  }
+
+  /* line 96, ../sass/partials/component/_splash.scss */
+  .page-blogs #main {
+    background: transparent url("/themes/mariquecalcus/images/splash/empty.jpg") center 0 no-repeat;
+    padding-bottom: 200px;
+  }
+  /* line 101, ../sass/partials/component/_splash.scss */
+  .page-blogs #main h1.title {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  /* line 107, ../sass/partials/component/_splash.scss */
+  .page-blogs #main h2.subtitle {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  /* line 117, ../sass/partials/component/_splash.scss */
+  .page-node-8 #main {
+    background: transparent url("/themes/mariquecalcus/images/splash/empty.jpg") center 0 no-repeat;
+    padding-bottom: 200px;
+  }
+  /* line 122, ../sass/partials/component/_splash.scss */
+  .page-node-8 #main h1.title {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  /* line 128, ../sass/partials/component/_splash.scss */
+  .page-node-8 #main h2.subtitle {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  /* line 138, ../sass/partials/component/_splash.scss */
+  .page-contact #main {
+    background: transparent url("/themes/mariquecalcus/images/splash/empty.jpg") center 0 no-repeat;
+    padding-bottom: 200px;
+  }
+  /* line 143, ../sass/partials/component/_splash.scss */
+  .page-contact #main h1.title {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  /* line 149, ../sass/partials/component/_splash.scss */
+  .page-contact #main h2.subtitle {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  /* line 160, ../sass/partials/component/_splash.scss */
+  .page-works #main {
+    background: transparent url("/themes/mariquecalcus/images/splash/empty.jpg") center 0 no-repeat;
+    padding-bottom: 200px;
+  }
+  /* line 164, ../sass/partials/component/_splash.scss */
+  .page-works #main h1.title {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+  /* line 170, ../sass/partials/component/_splash.scss */
+  .page-works #main h2.subtitle {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
   }
 }
 /**
@@ -2257,13 +2392,70 @@ html body.front .container #main-wrapper .intro .content {
   }
   /* line 55, ../sass/partials/component/_contact_form.scss */
   .feedback-contact-message-form input[type="text"], .feedback-contact-message-form input[type="email"] {
-    width: 100%;
+    width: 95%;
   }
   /* line 59, ../sass/partials/component/_contact_form.scss */
   .feedback-contact-message-form textarea {
-    width: 100%;
+    width: 95%;
   }
 }
+/**
+ * @file
+ * Contact Form.
+ */
+/* Mobile First */
+/* line 7, ../sass/partials/component/_contact_detail.scss */
+.contact-detail {
+  margin: 70px 0 0;
+  padding: 10px;
+}
+/* line 11, ../sass/partials/component/_contact_detail.scss */
+.contact-detail h3 {
+  border-bottom: 1px gray solid;
+}
+/* line 15, ../sass/partials/component/_contact_detail.scss */
+.contact-detail h4 {
+  margin: 0;
+}
+/* line 19, ../sass/partials/component/_contact_detail.scss */
+.contact-detail h5 {
+  margin: 0;
+}
+/* line 23, ../sass/partials/component/_contact_detail.scss */
+.contact-detail ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 27, ../sass/partials/component/_contact_detail.scss */
+.contact-detail ul li {
+  padding-left: 0px;
+  list-style-type: none;
+}
+/* line 33, ../sass/partials/component/_contact_detail.scss */
+.contact-detail .address {
+  color: gray;
+  font-size: 0.7em;
+  line-height: 1.2em;
+}
+
+/* line 41, ../sass/partials/component/_contact_detail.scss */
+#contact-london {
+  margin: 0;
+}
+/* line 44, ../sass/partials/component/_contact_detail.scss */
+#contact-london h3 {
+  border-bottom: 1px #6fb7e9 solid;
+}
+
+/* line 50, ../sass/partials/component/_contact_detail.scss */
+#contact-brussel {
+  margin: 0;
+}
+/* line 53, ../sass/partials/component/_contact_detail.scss */
+#contact-brussel h3 {
+  border-bottom: 1px #0db14b solid;
+}
+
 /**
  * @file
  * Contact Form.
@@ -2393,6 +2585,12 @@ html body.front .container #main-wrapper .intro .content {
  * Article.
  */
 /* Mobile First */
+@media (min-width: 992px) {
+  /* line 12, ../sass/partials/component/_slogan.scss */
+  .slogan {
+    padding: 17px 0 0;
+  }
+}
 /**
  * @file
  * Article.
@@ -2403,6 +2601,12 @@ html body.front .container #main-wrapper .intro .content {
   background-color: #0db14b;
 }
 
+@media (min-width: 992px) {
+  /* line 15, ../sass/partials/component/_calltoaction.scss */
+  .calltoaction {
+    padding: 10px 0 0;
+  }
+}
 /**
  * @file
  * Article.
@@ -3171,25 +3375,24 @@ ul.tree ul li:last-child:before {
  */
 /* line 6, ../sass/partials/theme/_global.scss */
 body {
-  background-color: #e9f2f9;
   color: #241f55;
 }
-/* line 9, ../sass/partials/theme/_global.scss */
+/* line 11, ../sass/partials/theme/_global.scss */
 body #header {
   background-color: #e9f2f9;
 }
-/* line 13, ../sass/partials/theme/_global.scss */
+/* line 15, ../sass/partials/theme/_global.scss */
 body #main-wrapper #main {
   background-color: white;
   max-width: 100%;
 }
-/* line 17, ../sass/partials/theme/_global.scss */
+/* line 19, ../sass/partials/theme/_global.scss */
 body #main-wrapper #footer {
   background-color: #3c8dc5;
 }
 
 @media (min-width: 768px) {
-  /* line 26, ../sass/partials/theme/_global.scss */
+  /* line 28, ../sass/partials/theme/_global.scss */
   body #header {
     background: rgba(255, 255, 255, 0.75);
     box-shadow: 0 0 3px #e9f2f9;

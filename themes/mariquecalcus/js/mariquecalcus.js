@@ -7,38 +7,40 @@
 
     "use strict";
 
-    $(document).ready(function($) {
+    var current = -200;
 
-        console.log('ready1');
+    var increment = 1;
 
-        function bgscroll(){
+    function bgscroll(){
 
-            // 1 pixel row at a time
-            current -= 1;
+        // Set the direction.
+        var direction = 'h';
 
-            // move the background with backgrond-position css properties
-            $('#intro').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
-
+        if (current >= 0) {
+            increment = -1;
         }
+        if (current <= -200) {
+            increment = 1;
+        }
+        // 1 pixel row at a time
+        current = current + increment;
+
+        // move the background with backgrond-position css properties
+        //$('.bgscroll').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
+
+    }
+
+    $(document).ready(function($) {
 
         //Calls the scrolling function repeatedly.
         var scrollSpeed = 70;
 
-        // set the default position
-        var current = 0;
-
-        // set the direction
-        var direction = 'h';
-        //setInterval(bgscroll, scrollSpeed);
+        setInterval(bgscroll, scrollSpeed);
 
         // Enable syntax.
         SyntaxHighlighter.all();
 
-        console.log('ready2');
-
         $("#owl-example").owlCarousel();
-
-        console.log('ready3');
 
         $("#owl-work").owlCarousel({
             slideSpeed : 300,
@@ -49,8 +51,6 @@
             itemsDesktopSmall : [979,2],
             itemsDesktop : [1199,2]
         });
-
-        console.log('ready4');
 
     });
 

@@ -9,6 +9,13 @@
 
   .content {
     @include container(96%);
+
+    a {
+      color: $blue;
+      &:hover {
+        color: $green;
+      }
+    }
   }
 }
 

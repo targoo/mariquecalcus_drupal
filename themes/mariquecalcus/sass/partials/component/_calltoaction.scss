@@ -13,6 +13,7 @@
 
 @include breakpoint($bp-desktop) {
   .calltoaction {
+    padding: 10px 0 0;
   }
 }
 

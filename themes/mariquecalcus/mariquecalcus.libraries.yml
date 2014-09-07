@@ -16,6 +16,10 @@ mariquecalcus-syntaxhighlighter:
     js/vendor/syntaxhighlighter/scripts/shCore.js: {}
     js/vendor/syntaxhighlighter/scripts/shBrushJScript.js: {}
     js/vendor/syntaxhighlighter/scripts/shBrushPhp.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushBash.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushCss.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushXml.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushSass.js: {}
   css:
     theme:
       js/vendor/syntaxhighlighter/styles/shCoreDefault.css: {}

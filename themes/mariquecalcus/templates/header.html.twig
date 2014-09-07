@@ -1,0 +1,12 @@
+<header id="header">
+  <div class="logo">
+    <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
+    </a>
+  </div>
+
+  {% if main_menu %}
+    <nav id ="main-menu" class="navigation" role="navigation">
+      {{ main_menu }}
+    </nav>
+  {% endif %}
+</header>

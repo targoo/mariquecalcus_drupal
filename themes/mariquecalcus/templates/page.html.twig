@@ -80,26 +80,9 @@
  */
 #}
 
-<!--ol
-  {% for key, value in node  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol-->
-
 <div class="container">
 
-  <header id="header">
-    <div class="logo">
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
-      </a>
-    </div>
-
-    {% if main_menu %}
-      <nav id ="main-menu" class="navigation" role="navigation">
-        {{ main_menu }}
-      </nav>
-    {% endif %}
-  </header>
+  {% include 'themes/mariquecalcus/templates/header.html.twig' %}
 
   <div id="main-wrapper">
 
@@ -110,7 +93,7 @@
       <a id="mobile-logo" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" ></a>
     </div>
 
-    <main id="main" role="main">
+    <main id="main" role="main" class="bgscroll">
 
       <div id="content-wrapper" {% if page.aside_right %} class="aside_right"{% endif %}>
 

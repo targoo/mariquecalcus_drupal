@@ -81,27 +81,9 @@
  */
 #}
 
-<!--ol>
-  {% for key, value in _context  %}
-    <li>{{ key }}</li>
-  {% endfor %}
-</ol-->
-
-
 <div class="container">
 
-  <header id="header">
-    <div class="logo">
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
-      </a>
-    </div>
-
-    {% if main_menu %}
-      <nav id ="main-menu" class="navigation" role="navigation">
-        {{ main_menu }}
-      </nav>
-    {% endif %}
-  </header>
+  {% include 'themes/mariquecalcus/templates/header.html.twig' %}
 
   <div id="main-wrapper">
 
@@ -114,7 +96,7 @@
 
     {{ messages }}
 
-    <section style="display: block" id="intro" class="intro">
+    <section style="display: block" id="intro" class="intro bgscroll">
       <div class="content">
         <h1>We build great websites and powerful applications</h1>
         <p>
@@ -230,7 +212,7 @@
 
     <section style="display: block" id="blog" class="decor white blog">
       <div class="content">
-        <span>LATEST</span>
+        <span><a href="/blogs">BLOG</a></span>
         <div class="drawing">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="300px" height="10px" viewBox="0 0 300 10" enable-background="new 0 0 300 10" xml:space="preserve">
@@ -369,7 +351,7 @@
 
     <section style="display: block" id="work" class="decor white">
       <div class="content">
-        <span>WORK</span>
+        <span><a href="/work">WORK</a></span>
         <div class="drawing">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="300px" height="10px" viewBox="0 0 300 10" enable-background="new 0 0 300 10" xml:space="preserve">

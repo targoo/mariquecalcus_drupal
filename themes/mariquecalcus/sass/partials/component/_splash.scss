@@ -4,6 +4,7 @@
  */
 
 /* Mobile First */
+
 html {
   body.front {
     .container {
@@ -71,6 +72,111 @@ html {
 
 
 @include breakpoint($bp-desktop) {
+
+  // Homepage.
+  #main-wrapper {
+    .intro {
+
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      .content {
+        top: 150px;
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  // Blog.
+  .page-blogs #main {
+    background:transparent url('/themes/mariquecalcus/images/splash/empty.jpg') center 0 no-repeat;
+    //background:transparent url('/themes/mariquecalcus/images/splash/blog.jpg') center 0 no-repeat;
+    padding-bottom: 200px;
+
+    h1.title {
+      font-weight: 100;
+      color: $white;
+      text-align: center;
+    }
+
+    h2.subtitle {
+      font-weight: 400;
+      font-size: 1.5em;
+      color: $white;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+  }
+
+  // Service.
+  .page-node-8  #main {
+    background:transparent url('/themes/mariquecalcus/images/splash/empty.jpg') center 0 no-repeat;
+    //background:transparent url('/themes/mariquecalcus/images/splash/service.jpg') center 0 no-repeat;
+    padding-bottom: 200px;
+
+    h1.title {
+      font-weight: 100;
+      color: $white;
+      text-align: center;
+    }
+
+    h2.subtitle {
+      font-weight: 400;
+      font-size: 1.5em;
+      color: $white;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+  }
+
+  // Contact.
+  .page-contact  #main {
+    background:transparent url('/themes/mariquecalcus/images/splash/empty.jpg') center 0 no-repeat;
+    //background:transparent url('/themes/mariquecalcus/images/splash/contact.jpg') center 0 no-repeat;
+    padding-bottom: 200px;
+
+    h1.title {
+      font-weight: 100;
+      color: $white;
+      text-align: center;
+    }
+
+    h2.subtitle {
+      font-weight: 400;
+      font-size: 1.5em;
+      color: $white;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+  }
+
+  // Work
+  .page-works  #main {
+    background:transparent url('/themes/mariquecalcus/images/splash/empty.jpg') center 0 no-repeat;
+    padding-bottom: 200px;
+
+    h1.title {
+      font-weight: 100;
+      color: $white;
+      text-align: center;
+    }
+
+    h2.subtitle {
+      font-weight: 400;
+      font-size: 1.5em;
+      color: $white;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+  }
+
 }
 
 
