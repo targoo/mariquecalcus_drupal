@@ -81,7 +81,11 @@
 <article id="node-{{ node.id }}" class="work {{ attributes.class}} clearfix"{{ attributes }} role="article">
 
   <aside class="aside">
+    <h5>HIGHLIGHTS</h5>
     {{ content.field_highlight }}
+
+    <h5>TIMELINE</h5>
+    {{ content.field_timeline }}
   </aside>
 
   {% if view_mode == 'teaser' %}

@@ -173,7 +173,7 @@ module.exports = function(grunt) {
       splash: {
         expand: true,
         cwd: 'images_sources/',
-        src: 'splash/*.svg',
+        src: 'splash/*.*',
         dest: 'images/',
         filter: 'isFile'
       }

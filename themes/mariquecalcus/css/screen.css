@@ -1120,6 +1120,91 @@ sup {
 }
 /**
  * @file
+ * Logo.
+ */
+/* Mobile First */
+/* line 8, ../sass/partials/layout/_technology.scss */
+.technology .content {
+  max-width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+.technology .content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../sass/partials/layout/_technology.scss */
+.technology .content .item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  /* line 19, ../sass/partials/layout/_technology.scss */
+  .technology .content {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .technology .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 21, ../sass/partials/layout/_technology.scss */
+  .technology .content .item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 31, ../sass/partials/layout/_technology.scss */
+  .technology .content {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em 0;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .technology .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 34, ../sass/partials/layout/_technology.scss */
+  .technology .content .item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 44, ../sass/partials/layout/_technology.scss */
+  .technology .content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .technology .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/**
+ * @file
  * Component (Module) elements.
  */
 /**
@@ -1447,7 +1532,7 @@ sup {
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_simple.png?1403814353') no-repeat;
+  background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_simple.png?1410113456') no-repeat;
   width: 100px;
   height: 100px;
   margin: 20px 0 0px 20px;
@@ -2141,29 +2226,66 @@ html body.front .container #main-wrapper .intro .content {
  * Article.
  */
 /* Mobile First */
-/* line 9, ../sass/partials/component/_work.scss */
+/* line 8, ../sass/partials/component/_work.scss */
 .work .aside {
-  float: none;
-  position: absolute;
-  width: 15%;
-  margin-right: 5%;
-}
-/* line 16, ../sass/partials/component/_work.scss */
-.work .image {
-  width: 80%;
-  float: right;
-}
-/* line 21, ../sass/partials/component/_work.scss */
-.work .content {
-  width: 55%;
-  margin-left: 20%;
-  float: left;
-}
-/* line 27, ../sass/partials/component/_work.scss */
-.work .field-name-field-highlight {
   background-color: #e9f2f9;
+  padding: 5px;
+}
+/* line 12, ../sass/partials/component/_work.scss */
+.work .aside .field-name-field-highlight {
+  padding-bottom: 15px;
+}
+/* line 15, ../sass/partials/component/_work.scss */
+.work .aside .field-name-field-highlight .field-label {
+  display: none;
+}
+/* line 19, ../sass/partials/component/_work.scss */
+.work .aside .field-name-field-highlight .field-item {
+  font-size: 0.7em;
+  line-height: 1.3em;
+  color: gray;
 }
 
+@media (min-width: 768px) {
+  /* line 31, ../sass/partials/component/_work.scss */
+  .work .aside {
+    float: none;
+    position: absolute;
+    width: 29%;
+  }
+  /* line 37, ../sass/partials/component/_work.scss */
+  .work .image {
+    width: 70%;
+    float: right;
+  }
+  /* line 42, ../sass/partials/component/_work.scss */
+  .work .content {
+    width: 55%;
+    margin-left: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 53, ../sass/partials/component/_work.scss */
+  .work .aside {
+    background-color: #e9f2f9;
+    padding: 5px;
+  }
+  /* line 57, ../sass/partials/component/_work.scss */
+  .work .aside .field-name-field-highlight {
+    padding-bottom: 35px;
+  }
+  /* line 60, ../sass/partials/component/_work.scss */
+  .work .aside .field-name-field-highlight .field-label {
+    display: none;
+  }
+  /* line 64, ../sass/partials/component/_work.scss */
+  .work .aside .field-name-field-highlight .field-item {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color: gray;
+  }
+}
 /**
  * @file
  * Article.
@@ -2909,11 +3031,6 @@ html body.front .container #main-wrapper .intro .content {
     width: 50%;
   }
 }
-/**
- * @file
- * Logo.
- */
-/* Mobile First */
 /**
  * @file
  * Article.

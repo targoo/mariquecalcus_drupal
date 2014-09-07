@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+.technology {
+  .content {
+    @include container(96%);
+    .item {
+      @include span (12);
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .technology {
+    .content {
+      @include container(94%);
+      .item {
+        @include span (4);
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .technology {
+    .content {
+      @include container(92%);
+      padding: 3em 0;
+      .item {
+        @include span (4);
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .technology {
+    .content {
+      @include container(90%);
+    }
+  }
+}
