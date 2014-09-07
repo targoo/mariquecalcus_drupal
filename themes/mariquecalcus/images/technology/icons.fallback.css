@@ -1,26 +1,102 @@
+.icon-angularjs { background-image: url('angularjs.png'); background-repeat: no-repeat; }
+
+.icon-backbone { background-image: url('backbone.png'); background-repeat: no-repeat; }
+
+.icon-behat { background-image: url('behat.png'); background-repeat: no-repeat; }
+
 .icon-blog { background-image: url('blog.png'); background-repeat: no-repeat; }
+
+.icon-brackets { background-image: url('brackets.png'); background-repeat: no-repeat; }
+
+.icon-c++ { background-image: url('c++.png'); background-repeat: no-repeat; }
+
+.icon-coffeescript { background-image: url('coffeescript.png'); background-repeat: no-repeat; }
+
+.icon-compass { background-image: url('compass.png'); background-repeat: no-repeat; }
 
 .icon-css3 { background-image: url('css3.png'); background-repeat: no-repeat; }
 
+.icon-doctrine { background-image: url('doctrine.png'); background-repeat: no-repeat; }
+
 .icon-drupal { background-image: url('drupal.png'); background-repeat: no-repeat; }
+
+.icon-eclipse { background-image: url('eclipse.png'); background-repeat: no-repeat; }
+
+.icon-express { background-image: url('express.png'); background-repeat: no-repeat; }
+
+.icon-git { background-image: url('git.png'); background-repeat: no-repeat; }
 
 .icon-grunt { background-image: url('grunt.png'); background-repeat: no-repeat; }
 
+.icon-gruntjs { background-image: url('gruntjs.png'); background-repeat: no-repeat; }
+
+.icon-hibernate { background-image: url('hibernate.png'); background-repeat: no-repeat; }
+
 .icon-html5 { background-image: url('html5.png'); background-repeat: no-repeat; }
 
+.icon-jade { background-image: url('jade.png'); background-repeat: no-repeat; }
+
+.icon-java { background-image: url('java.png'); background-repeat: no-repeat; }
+
+.icon-javascript { background-image: url('javascript.png'); background-repeat: no-repeat; }
+
+.icon-jenkins { background-image: url('jenkins.png'); background-repeat: no-repeat; }
+
 .icon-jquery { background-image: url('jquery.png'); background-repeat: no-repeat; }
+
+.icon-jsp { background-image: url('jsp.png'); background-repeat: no-repeat; }
+
+.icon-mongodb { background-image: url('mongodb.png'); background-repeat: no-repeat; }
+
+.icon-msproject { background-image: url('msproject.png'); background-repeat: no-repeat; }
 
 .icon-mysql { background-image: url('mysql.png'); background-repeat: no-repeat; }
 
 .icon-node.js { background-image: url('node.js.png'); background-repeat: no-repeat; }
 
+.icon-nodejs { background-image: url('nodejs.png'); background-repeat: no-repeat; }
+
+.icon-objective-c { background-image: url('objective-c.png'); background-repeat: no-repeat; }
+
+.icon-openbravo { background-image: url('openbravo.png'); background-repeat: no-repeat; }
+
+.icon-oracle { background-image: url('oracle.png'); background-repeat: no-repeat; }
+
 .icon-performance { background-image: url('performance.png'); background-repeat: no-repeat; }
 
+.icon-photoshop { background-image: url('photoshop.png'); background-repeat: no-repeat; }
+
 .icon-php { background-image: url('php.png'); background-repeat: no-repeat; }
+
+.icon-phpspec { background-image: url('phpspec.png'); background-repeat: no-repeat; }
+
+.icon-phpstorm { background-image: url('phpstorm.png'); background-repeat: no-repeat; }
+
+.icon-plsql { background-image: url('plsql.png'); background-repeat: no-repeat; }
 
 .icon-responsive { background-image: url('responsive.png'); background-repeat: no-repeat; }
 
 .icon-sass { background-image: url('sass.png'); background-repeat: no-repeat; }
 
+.icon-sql-server { background-image: url('sql-server.png'); background-repeat: no-repeat; }
+
+.icon-sqlite { background-image: url('sqlite.png'); background-repeat: no-repeat; }
+
+.icon-struts { background-image: url('struts.png'); background-repeat: no-repeat; }
+
+.icon-stylus { background-image: url('stylus.png'); background-repeat: no-repeat; }
+
+.icon-sublimeText { background-image: url('sublimeText.png'); background-repeat: no-repeat; }
+
+.icon-sugarcrm { background-image: url('sugarcrm.png'); background-repeat: no-repeat; }
+
+.icon-svn { background-image: url('svn.png'); background-repeat: no-repeat; }
+
 .icon-symfony { background-image: url('symfony.png'); background-repeat: no-repeat; }
+
+.icon-tomcat { background-image: url('tomcat.png'); background-repeat: no-repeat; }
+
+.icon-twig { background-image: url('twig.png'); background-repeat: no-repeat; }
+
+.icon-vagrant { background-image: url('vagrant.png'); background-repeat: no-repeat; }
 

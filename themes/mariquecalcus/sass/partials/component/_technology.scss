@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+.technology {
+  background-color: red;
+}
+
+
+@include breakpoint($bp-tablet) {
+}
+
+
+@include breakpoint($bp-desktop) {
+}
+
+
+@include breakpoint($bp-large) {
+}
