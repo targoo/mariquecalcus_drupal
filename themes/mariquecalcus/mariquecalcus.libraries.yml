@@ -14,6 +14,7 @@ mariquecalcus-syntaxhighlighter:
   version: 3.0.83
   js:
     js/vendor/syntaxhighlighter/scripts/shCore.js: {}
+    js/vendor/syntaxhighlighter/scripts/shBrushPlain.js: {}
     js/vendor/syntaxhighlighter/scripts/shBrushJScript.js: {}
     js/vendor/syntaxhighlighter/scripts/shBrushPhp.js: {}
     js/vendor/syntaxhighlighter/scripts/shBrushBash.js: {}
