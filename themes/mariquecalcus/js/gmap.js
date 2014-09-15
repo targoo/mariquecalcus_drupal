@@ -17,7 +17,7 @@
             address: "PALISEUL, Grand Place 24",
             html: "<strong>Serge Lamock SPRL</strong><br>Grand Place 24<br/>6850 PALISEUL",
             icon: {
-                image: "/themes/serge/images/markers/marker.png",
+                //image: "/themes/serge/images/markers/marker.png",
                 iconsize: [30, 46],
                 iconanchor: [12, 46]
             },
