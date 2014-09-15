@@ -1162,7 +1162,7 @@ sup {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 50%;
+    width: 33.33333%;
     float: left;
   }
 }
@@ -1532,7 +1532,7 @@ sup {
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_simple.png?1410113456') no-repeat;
+  background: transparent url('/themes/mariquecalcus/images/../images/logos/logo_simple.png?1410119372') no-repeat;
   width: 100px;
   height: 100px;
   margin: 20px 0 0px 20px;
@@ -2496,12 +2496,6 @@ html body.front .container #main-wrapper .intro .content {
   box-shadow: none;
   text-shadow: none;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 39, ../sass/partials/component/_contact_form.scss */
-  .feedback-contact-message-form #edit-submit {
-    background-image: url("../images/arrows/arrow-right-white@2x.png");
-  }
-}
 /* line 104, ../sass/partials/base/_mixins.scss */
 .feedback-contact-message-form #edit-submit:hover {
   background-color: #2d96df;
@@ -2669,12 +2663,6 @@ html body.front .container #main-wrapper .intro .content {
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 46, ../sass/partials/component/_demo_form.scss */
-  .my-unique-id #edit-show {
-    background-image: url("../images/arrows/arrow-right-white@2x.png");
-  }
 }
 /* line 104, ../sass/partials/base/_mixins.scss */
 .my-unique-id #edit-show:hover {
@@ -3256,12 +3244,6 @@ html body.front .container #main-wrapper .intro .content {
   box-shadow: none;
   text-shadow: none;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 86, ../sass/partials/component/_lab.scss */
-  .comment-form #edit-submit {
-    background-image: url("../images/arrows/arrow-right-white@2x.png");
-  }
-}
 /* line 104, ../sass/partials/base/_mixins.scss */
 .comment-form #edit-submit:hover {
   background-color: #2d96df;
@@ -3345,12 +3327,6 @@ html body.front .container #main-wrapper .intro .content {
   -webkit-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 132, ../sass/partials/component/_lab.scss */
-  .comment .links .comment-reply a {
-    background-image: url("../images/arrows/arrow-right-white@2x.png");
-  }
 }
 /* line 104, ../sass/partials/base/_mixins.scss */
 .comment .links .comment-reply a:hover {

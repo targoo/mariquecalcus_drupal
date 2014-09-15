@@ -98,7 +98,7 @@ $offset-v: 0, $offset-h: 0
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-    background-image: url('../images/arrows/arrow-right-white@2x.png');
+    //background-image: url('../images/arrows/arrow-right-white@2x.png');
   }
 
   &:hover {
